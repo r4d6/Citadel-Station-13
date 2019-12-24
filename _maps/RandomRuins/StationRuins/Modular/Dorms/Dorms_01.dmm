@@ -1,16 +1,273 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "b" = (
 /turf/closed/wall,
-/area/space)
+/area/crew_quarters/dorms)
+"c" = (
+/obj/machinery/cryopod{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
+/turf/open/floor/plasteel,
+/area/crew_quarters/dorms)
+"e" = (
+/obj/machinery/door/airlock{
+	id_tag = "Dorm2";
+	name = "Room One"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/carpet,
+/area/crew_quarters/dorms)
+"h" = (
+/obj/machinery/button/door{
+	id = "Dorm5";
+	name = "Cabin Bolt Control";
+	normaldoorcontrol = 1;
+	pixel_x = 25;
+	specialfunctions = 4
+	},
+/turf/open/floor/carpet,
+/area/crew_quarters/dorms)
+"i" = (
+/obj/machinery/cryopod{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/crew_quarters/dorms)
+"j" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/turf/closed/wall,
+/area/crew_quarters/dorms)
+"k" = (
+/obj/machinery/door/airlock{
+	id_tag = "Dorm3";
+	name = "Room Two"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/carpet,
+/area/crew_quarters/dorms)
+"l" = (
+/obj/machinery/button/door{
+	id = "Dorm2";
+	name = "Dorm Bolt Control";
+	normaldoorcontrol = 1;
+	pixel_x = -25;
+	specialfunctions = 4
+	},
+/turf/open/floor/carpet,
+/area/crew_quarters/dorms)
+"o" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/crew_quarters/dorms)
+"p" = (
+/obj/effect/spawner/structure/window,
+/turf/open/floor/plating,
+/area/crew_quarters/dorms)
+"q" = (
+/obj/machinery/door/airlock{
+	id_tag = "Dorm6";
+	name = "Room Five"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/carpet,
+/area/crew_quarters/dorms)
+"r" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/turf/open/floor/plasteel,
+/area/crew_quarters/dorms)
+"s" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/open/floor/plasteel,
+/area/crew_quarters/dorms)
+"t" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden,
+/turf/open/floor/plasteel,
+/area/crew_quarters/dorms)
+"u" = (
+/obj/machinery/door/airlock{
+	id_tag = "Dorm5";
+	name = "Room Four"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/carpet,
+/area/crew_quarters/dorms)
+"w" = (
+/obj/machinery/door/airlock/public/glass{
+	name = "Dormitory"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/crew_quarters/dorms)
 "x" = (
-/turf/open/space/basic,
-/area/space)
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/crew_quarters/dorms)
+"A" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/open/floor/plasteel,
+/area/crew_quarters/dorms)
+"B" = (
+/obj/structure/bed,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 8
+	},
+/turf/open/floor/carpet,
+/area/crew_quarters/dorms)
+"C" = (
+/obj/structure/bed,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 4;
+	pixel_y = 5
+	},
+/turf/open/floor/carpet,
+/area/crew_quarters/dorms)
+"E" = (
+/obj/machinery/button/door{
+	id = "Dorm4";
+	name = "Dorm Bolt Control";
+	normaldoorcontrol = 1;
+	pixel_x = 25;
+	specialfunctions = 4
+	},
+/turf/open/floor/carpet,
+/area/crew_quarters/dorms)
+"F" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 4
+	},
+/turf/open/floor/carpet,
+/area/crew_quarters/dorms)
+"G" = (
+/obj/structure/closet/secure_closet/personal,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/turf/open/floor/carpet,
+/area/crew_quarters/dorms)
+"J" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/airalarm{
+	pixel_y = 23
+	},
+/turf/open/floor/carpet,
+/area/crew_quarters/dorms)
+"K" = (
+/obj/machinery/button/door{
+	id = "Room One";
+	name = "Door Bolt Control";
+	normaldoorcontrol = 1;
+	pixel_x = -25;
+	specialfunctions = 4
+	},
+/turf/open/floor/carpet,
+/area/crew_quarters/dorms)
+"L" = (
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/crew_quarters/dorms)
+"N" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/turf/open/floor/carpet,
+/area/crew_quarters/dorms)
+"P" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/crew_quarters/dorms)
+"Q" = (
+/obj/machinery/door/airlock{
+	id_tag = "Dorm4";
+	name = "Room Three"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/carpet,
+/area/crew_quarters/dorms)
+"R" = (
+/obj/machinery/door/airlock/public/glass{
+	name = "Dormitory"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/crew_quarters/dorms)
+"S" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/airalarm{
+	pixel_y = 23
+	},
+/obj/machinery/vr_sleeper,
+/turf/open/floor/plasteel,
+/area/crew_quarters/dorms)
+"V" = (
+/obj/machinery/button/door{
+	id = "Dorm3";
+	name = "Dorm Bolt Control";
+	normaldoorcontrol = 1;
+	pixel_x = -25;
+	specialfunctions = 4
+	},
+/turf/open/floor/carpet,
+/area/crew_quarters/dorms)
+"X" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 1
+	},
+/obj/machinery/vr_sleeper,
+/turf/open/floor/plasteel,
+/area/crew_quarters/dorms)
+"Y" = (
+/turf/open/floor/carpet,
+/area/crew_quarters/dorms)
+"Z" = (
+/turf/open/floor/plasteel,
+/area/crew_quarters/dorms)
 
 (1,1,1) = {"
 b
-b
-b
-b
+w
+p
+R
 b
 b
 b
@@ -23,142 +280,142 @@ b
 (2,1,1) = {"
 b
 x
-x
-x
-x
-x
-x
-x
-x
-x
-x
+Z
+P
 b
+F
+Y
+C
+b
+F
+Y
+C
 "}
 (3,1,1) = {"
 b
 x
-x
-x
-x
-x
-x
-x
-x
-x
-x
+Z
+P
 b
+J
+h
+G
+b
+J
+E
+G
 "}
 (4,1,1) = {"
 b
 x
-x
+Z
+P
 b
+u
 b
+j
 b
+q
 b
-b
-b
-x
-x
-b
+j
 "}
 (5,1,1) = {"
 b
 x
+Z
+P
+Z
 x
-b
+Z
+P
+Z
 x
-x
-x
-x
-b
-x
-x
-b
+Z
+i
 "}
 (6,1,1) = {"
 b
+S
+Z
+P
+Z
 x
+Z
+P
+Z
 x
-b
-x
-x
-x
-x
-b
-x
-x
-b
+Z
+i
 "}
 (7,1,1) = {"
 b
-x
-x
-x
-b
-b
-b
-b
-x
-x
-x
-b
+X
+A
+s
+A
+Z
+A
+s
+A
+t
+Z
+i
 "}
 (8,1,1) = {"
 b
 x
-x
-x
-x
-x
-x
-x
-x
-x
-x
-b
+Z
+L
+r
+o
+r
+Z
+r
+o
+r
+c
 "}
 (9,1,1) = {"
 b
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
+e
 b
+j
+b
+k
+b
+j
+b
+Q
+b
+j
 "}
 (10,1,1) = {"
 b
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
+J
+K
+G
 b
+J
+l
+G
+b
+J
+V
+G
 "}
 (11,1,1) = {"
 b
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
+N
+Y
+B
 b
+N
+Y
+B
+b
+N
+Y
+B
 "}
 (12,1,1) = {"
 b

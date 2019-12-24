@@ -498,7 +498,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 
 	// Dorms
-/obj/effect/landmark/stationroom/modular/service
+/obj/effect/landmark/stationroom/modular/dorms
 	template_names = list("Dorms 01")
 	icon = 'icons/rooms/modular/dorms.dmi'
 
@@ -506,7 +506,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 
 	// Medical
-/obj/effect/landmark/stationroom/modular/service
+/obj/effect/landmark/stationroom/modular/medical
 	template_names = list("Medical 01")
 	icon = 'icons/rooms/modular/medical.dmi'
 
@@ -531,6 +531,6 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 
 		// T-Comm
-/obj/effect/landmark/stationroom/modular/bridge
+/obj/effect/landmark/stationroom/modular/t_comm
 	template_names = list("T_Comm 01")
 	icon = 'icons/rooms/modular/t_comm.dmi'
