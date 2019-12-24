@@ -495,7 +495,9 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	icon = 'icons/rooms/modular/bridge.dmi'
 
 	// Cargo
-
+/obj/effect/landmark/stationroom/modular/cargo
+	template_names = list("Cargo 01")
+	icon = 'icons/rooms/modular/cargo.dmi'
 
 	// Dorms
 /obj/effect/landmark/stationroom/modular/dorms
@@ -503,7 +505,9 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	icon = 'icons/rooms/modular/dorms.dmi'
 
 	// Evac_Arrival
-
+/obj/effect/landmark/stationroom/modular/evac_arrival
+	template_names = list("Evac_Arrival 01")
+	icon = 'icons/rooms/modular/evac_arrival.dmi'
 
 	// Medical
 /obj/effect/landmark/stationroom/modular/medical
@@ -514,7 +518,9 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 
 	// Science
-
+/obj/effect/landmark/stationroom/modular/science
+	template_names = list("Science 01")
+	icon = 'icons/rooms/modular/science.dmi'
 
 	// Security
 
