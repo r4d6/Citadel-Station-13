@@ -1,0 +1,1075 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aL" = (
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"bC" = (
+/obj/machinery/airalarm{
+	pixel_y = 24
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai)
+"bG" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on,
+/obj/item/radio/intercom{
+	broadcasting = 1;
+	frequency = 1447;
+	listening = 0;
+	name = "AI Intercom";
+	pixel_y = -28
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"bW" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/machinery/airalarm{
+	pixel_y = 25
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"cp" = (
+/obj/machinery/holopad,
+/turf/open/floor/circuit,
+/area/ai_monitored/turret_protected/ai)
+"dF" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai)
+"dH" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 5
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"dK" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/mob/living/simple_animal/bot/secbot/pingsky,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"ei" = (
+/turf/closed/wall/r_wall,
+/area/hallway/primary/central)
+"hK" = (
+/obj/machinery/atmospherics/components/unary/tank/air,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"hQ" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 5
+	},
+/turf/closed/wall/r_wall,
+/area/ai_monitored/turret_protected/aisat_interior)
+"ik" = (
+/obj/machinery/airalarm{
+	dir = 1;
+	pixel_y = -22
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"is" = (
+/obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"iH" = (
+/obj/machinery/atmospherics/components/binary/pump/on,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"iR" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 5
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"jq" = (
+/obj/machinery/door/airlock/hatch{
+	name = "MiniSat Service Bay";
+	req_one_access_txt = "65"
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"jC" = (
+/turf/open/space/basic,
+/area/space/nearstation)
+"jD" = (
+/obj/machinery/door/window{
+	dir = 1;
+	name = "AI Core Door";
+	req_access_txt = "16"
+	},
+/turf/open/floor/circuit,
+/area/ai_monitored/turret_protected/ai)
+"kt" = (
+/obj/machinery/power/terminal,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai)
+"kY" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai)
+"ls" = (
+/obj/machinery/firealarm{
+	pixel_y = 24
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai)
+"lJ" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/on{
+	dir = 4
+	},
+/turf/open/floor/plating/airless,
+/area/space/nearstation)
+"mr" = (
+/obj/machinery/door/airlock/hatch,
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"np" = (
+/obj/machinery/porta_turret/ai{
+	dir = 4
+	},
+/turf/open/floor/circuit,
+/area/ai_monitored/turret_protected/ai)
+"nR" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/floor/circuit,
+/area/ai_monitored/turret_protected/ai)
+"os" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 8
+	},
+/turf/closed/wall/r_wall,
+/area/ai_monitored/turret_protected/aisat_interior)
+"oV" = (
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai)
+"qj" = (
+/obj/effect/landmark/start/ai/secondary,
+/obj/structure/window/reinforced{
+	dir = 1;
+	layer = 2.9
+	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/door/window{
+	dir = 8;
+	name = "AI Core Door";
+	req_access_txt = "16"
+	},
+/obj/item/radio/intercom{
+	broadcasting = 1;
+	frequency = 1447;
+	listening = 0;
+	name = "AI Intercom";
+	pixel_x = 28;
+	pixel_y = 5
+	},
+/obj/item/radio/intercom{
+	freerange = 1;
+	name = "Common Channel";
+	pixel_x = 28;
+	pixel_y = -10
+	},
+/turf/open/floor/circuit,
+/area/ai_monitored/turret_protected/ai)
+"qk" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 9
+	},
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/turf/open/floor/plating,
+/area/aisat)
+"sf" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"sl" = (
+/obj/machinery/recharge_station,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"sT" = (
+/obj/effect/landmark/start/ai/secondary,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/door/window{
+	name = "AI Core Door";
+	req_access_txt = "16"
+	},
+/obj/item/radio/intercom{
+	broadcasting = 1;
+	frequency = 1447;
+	listening = 0;
+	name = "AI Intercom";
+	pixel_y = 20
+	},
+/obj/item/radio/intercom{
+	freerange = 1;
+	name = "Common Channel";
+	pixel_y = 35
+	},
+/turf/open/floor/circuit,
+/area/ai_monitored/turret_protected/ai)
+"uE" = (
+/obj/effect/landmark/start/ai/secondary,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 1;
+	layer = 2.9
+	},
+/obj/structure/window/reinforced,
+/obj/machinery/door/window{
+	dir = 4;
+	name = "AI Core Door";
+	req_access_txt = "16"
+	},
+/obj/item/radio/intercom{
+	broadcasting = 1;
+	frequency = 1447;
+	listening = 0;
+	name = "AI Intercom";
+	pixel_x = -28;
+	pixel_y = 5
+	},
+/obj/item/radio/intercom{
+	freerange = 1;
+	name = "Common Channel";
+	pixel_x = -28;
+	pixel_y = -10
+	},
+/turf/open/floor/circuit,
+/area/ai_monitored/turret_protected/ai)
+"uK" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/turf/open/floor/plating,
+/area/aisat)
+"uQ" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai)
+"uU" = (
+/obj/machinery/door/airlock/hatch{
+	name = "MiniSat Access";
+	req_one_access_txt = "32;19"
+	},
+/obj/machinery/door/firedoor,
+/turf/closed/wall/r_wall,
+/area/aisat)
+"vh" = (
+/turf/closed/wall/r_wall,
+/area/ai_monitored/turret_protected/ai)
+"vP" = (
+/obj/machinery/teleport/hub,
+/turf/open/floor/plating,
+/area/ai_monitored/turret_protected/aisat_interior)
+"wW" = (
+/obj/machinery/ai_slipper{
+	uses = 10
+	},
+/obj/machinery/light/floor,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai)
+"xq" = (
+/obj/machinery/teleport/station,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ai_monitored/turret_protected/aisat_interior)
+"xS" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"zd" = (
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai)
+"zH" = (
+/obj/machinery/door/airlock/hatch{
+	name = "MiniSat Teleporter";
+	req_access_txt = "17;65"
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"AE" = (
+/obj/machinery/atmospherics/pipe/manifold4w/supply/hidden,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"AP" = (
+/obj/machinery/door/airlock/command/glass{
+	name = "AI Core";
+	req_access_txt = "65"
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"Cg" = (
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
+	dir = 4
+	},
+/turf/closed/wall/r_wall,
+/area/ai_monitored/turret_protected/aisat_interior)
+"CC" = (
+/obj/machinery/computer/teleporter,
+/turf/open/floor/plating,
+/area/ai_monitored/turret_protected/aisat_interior)
+"DZ" = (
+/turf/closed/wall/r_wall,
+/area/aisat)
+"EW" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 9
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"Fl" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/closed/wall/r_wall,
+/area/ai_monitored/turret_protected/aisat_interior)
+"FO" = (
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai)
+"FX" = (
+/obj/machinery/holopad,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"Gm" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/circuit,
+/area/ai_monitored/turret_protected/ai)
+"Ic" = (
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai)
+"IF" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai)
+"Jc" = (
+/obj/item/radio/intercom{
+	broadcasting = 1;
+	frequency = 1447;
+	listening = 0;
+	name = "AI Intercom";
+	pixel_y = -28
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"Kn" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/turf/closed/wall/r_wall,
+/area/aisat)
+"KC" = (
+/turf/open/floor/circuit,
+/area/ai_monitored/turret_protected/ai)
+"Lc" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/structure/lattice,
+/turf/open/space/basic,
+/area/space/nearstation)
+"MB" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 9
+	},
+/turf/closed/wall/r_wall,
+/area/ai_monitored/turret_protected/aisat_interior)
+"NM" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"Oe" = (
+/obj/machinery/power/smes{
+	charge = 5e+006
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai)
+"Oj" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/open/floor/circuit,
+/area/ai_monitored/turret_protected/ai)
+"OW" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/turf/open/floor/plating,
+/area/ai_monitored/turret_protected/aisat_interior)
+"Pz" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"QI" = (
+/obj/machinery/door/airlock/hatch{
+	name = "MiniSat Exterior Access";
+	req_one_access_txt = "32;19"
+	},
+/obj/machinery/door/firedoor,
+/turf/open/space/basic,
+/area/aisat)
+"Rk" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai)
+"Rm" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"RL" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai)
+"RW" = (
+/turf/open/floor/plasteel/dark,
+/area/aisat)
+"Uj" = (
+/obj/machinery/bluespace_beacon,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"UJ" = (
+/turf/closed/wall/r_wall,
+/area/ai_monitored/turret_protected/aisat_interior)
+"VK" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai)
+"Wv" = (
+/obj/machinery/power/apc/highcap/five_k{
+	areastring = "/area/ai_monitored/turret_protected/ai";
+	dir = 8;
+	name = "AI Chamber APC";
+	pixel_x = -24
+	},
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai)
+"WU" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"Xe" = (
+/obj/machinery/door/poddoor/shutters{
+	id = "teledoor";
+	name = "MiniSat Teleport Access"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"XU" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
+/obj/item/radio/intercom{
+	broadcasting = 1;
+	frequency = 1447;
+	listening = 0;
+	name = "AI Intercom";
+	pixel_y = -28
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"Yk" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/turf/closed/wall/r_wall,
+/area/ai_monitored/turret_protected/aisat_interior)
+"Yv" = (
+/obj/effect/landmark/start/ai,
+/obj/item/radio/intercom{
+	broadcasting = 1;
+	frequency = 1447;
+	listening = 0;
+	name = "AI Intercom";
+	pixel_y = -28
+	},
+/obj/item/radio/intercom{
+	freerange = 1;
+	name = "Common Channel";
+	pixel_y = -42
+	},
+/obj/machinery/light/floor,
+/turf/open/floor/circuit,
+/area/ai_monitored/turret_protected/ai)
+"YJ" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai)
+
+(1,1,1) = {"
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+"}
+(2,1,1) = {"
+ei
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+ei
+"}
+(3,1,1) = {"
+ei
+jC
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+UJ
+UJ
+UJ
+UJ
+UJ
+UJ
+UJ
+UJ
+UJ
+jC
+ei
+"}
+(4,1,1) = {"
+ei
+jC
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+UJ
+UJ
+UJ
+UJ
+UJ
+UJ
+UJ
+UJ
+UJ
+jC
+ei
+"}
+(5,1,1) = {"
+ei
+jC
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+UJ
+vP
+NM
+Xe
+WU
+iR
+UJ
+UJ
+UJ
+jC
+ei
+"}
+(6,1,1) = {"
+ei
+jC
+vh
+vh
+vh
+zd
+zd
+zd
+zd
+uE
+zd
+Wv
+YJ
+oV
+UJ
+xq
+Uj
+zH
+aL
+Rm
+UJ
+UJ
+UJ
+jC
+ei
+"}
+(7,1,1) = {"
+ei
+jC
+vh
+vh
+vh
+zd
+wW
+zd
+zd
+KC
+zd
+zd
+wW
+uQ
+UJ
+CC
+XU
+Fl
+dH
+Rm
+UJ
+UJ
+UJ
+lJ
+ei
+"}
+(8,1,1) = {"
+ei
+jC
+vh
+vh
+vh
+bC
+zd
+np
+KC
+KC
+KC
+np
+dF
+IF
+Yk
+Yk
+Yk
+hQ
+sf
+Rm
+UJ
+UJ
+UJ
+Lc
+ei
+"}
+(9,1,1) = {"
+ei
+jC
+vh
+vh
+vh
+zd
+zd
+KC
+RL
+nR
+FO
+KC
+zd
+uQ
+OW
+aL
+bG
+Cg
+bW
+is
+WU
+Kn
+Kn
+qk
+DZ
+"}
+(10,1,1) = {"
+ei
+jC
+vh
+vh
+vh
+sT
+KC
+KC
+jD
+Yv
+vh
+KC
+cp
+Gm
+AP
+aL
+FX
+mr
+dK
+xS
+aL
+QI
+RW
+RW
+uU
+"}
+(11,1,1) = {"
+ei
+jC
+vh
+vh
+vh
+zd
+zd
+KC
+kY
+Oj
+Ic
+KC
+zd
+uQ
+OW
+aL
+ik
+os
+AE
+Pz
+Jc
+DZ
+DZ
+uK
+DZ
+"}
+(12,1,1) = {"
+ei
+jC
+vh
+vh
+vh
+zd
+zd
+np
+KC
+KC
+KC
+np
+VK
+Rk
+Fl
+Fl
+Fl
+MB
+sf
+aL
+UJ
+UJ
+UJ
+jC
+ei
+"}
+(13,1,1) = {"
+ei
+jC
+vh
+vh
+vh
+ls
+wW
+zd
+zd
+KC
+zd
+zd
+wW
+uQ
+UJ
+sl
+Jc
+UJ
+sf
+aL
+UJ
+UJ
+UJ
+jC
+ei
+"}
+(14,1,1) = {"
+ei
+jC
+vh
+vh
+vh
+zd
+zd
+zd
+zd
+qj
+zd
+zd
+kt
+Oe
+UJ
+aL
+aL
+jq
+sf
+aL
+UJ
+UJ
+UJ
+jC
+ei
+"}
+(15,1,1) = {"
+ei
+jC
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+UJ
+hK
+iH
+Fl
+EW
+aL
+UJ
+UJ
+UJ
+jC
+ei
+"}
+(16,1,1) = {"
+ei
+jC
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+UJ
+UJ
+UJ
+UJ
+UJ
+UJ
+UJ
+UJ
+UJ
+jC
+ei
+"}
+(17,1,1) = {"
+ei
+jC
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+vh
+UJ
+UJ
+UJ
+UJ
+UJ
+UJ
+UJ
+UJ
+UJ
+jC
+ei
+"}
+(18,1,1) = {"
+ei
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+jC
+ei
+"}
+(19,1,1) = {"
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+ei
+"}

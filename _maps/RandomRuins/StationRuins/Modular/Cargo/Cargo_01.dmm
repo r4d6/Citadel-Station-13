@@ -1,0 +1,2366 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"at" = (
+/turf/open/floor/plasteel/dark,
+/area/quartermaster/storage)
+"aB" = (
+/obj/docking_port/stationary{
+	dir = 4;
+	dwidth = 3;
+	height = 5;
+	id = "mining_home";
+	name = "mining shuttle bay";
+	roundstart_template = /datum/map_template/shuttle/mining/box;
+	width = 7
+	},
+/turf/open/space/basic,
+/area/space)
+"aJ" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/sign/warning/vacuum/external,
+/turf/open/floor/plasteel/dark,
+/area/quartermaster/storage)
+"bf" = (
+/obj/structure/disposaloutlet{
+	dir = 4
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 2
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/sorting)
+"bS" = (
+/obj/effect/turf_decal/loading_area,
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"cY" = (
+/turf/closed/wall,
+/area/quartermaster/storage)
+"dT" = (
+/obj/machinery/door/airlock/mining/glass{
+	name = "Cargo Office";
+	req_one_access_txt = "48;50"
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel,
+/area/quartermaster/office)
+"ea" = (
+/obj/machinery/disposal/deliveryChute{
+	dir = 8
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 2
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/sorting)
+"ee" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"ei" = (
+/obj/structure/plasticflaps,
+/turf/open/floor/plasteel,
+/area/quartermaster/office)
+"ex" = (
+/turf/closed/wall,
+/area/quartermaster/qm)
+"eW" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"eX" = (
+/obj/machinery/computer/cargo,
+/turf/open/floor/plasteel,
+/area/quartermaster/qm)
+"fd" = (
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"fp" = (
+/obj/effect/landmark/start/shaft_miner,
+/turf/open/floor/plasteel,
+/area/quartermaster/miningdock)
+"fr" = (
+/obj/structure/window/reinforced{
+	dir = 1;
+	layer = 2.9
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/sorting)
+"fM" = (
+/obj/machinery/computer/security/mining{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/miningdock)
+"gF" = (
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel/dark,
+/area/quartermaster/storage)
+"gG" = (
+/obj/machinery/door/airlock/mining/glass{
+	name = "Cargo Office";
+	req_access_txt = "50"
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel,
+/area/quartermaster/office)
+"hz" = (
+/obj/machinery/conveyor_switch/oneway{
+	id = "packageSort2"
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/sorting)
+"hS" = (
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "CargoIn"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"ig" = (
+/obj/effect/turf_decal/delivery,
+/obj/structure/closet/crate,
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"iu" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/window/westleft{
+	dir = 1;
+	name = "Cargo Desk";
+	req_access_txt = "50"
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/plating,
+/area/quartermaster/office)
+"iv" = (
+/obj/machinery/conveyor_switch/oneway{
+	dir = 1;
+	id = "CargoOut"
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"iT" = (
+/obj/machinery/computer/bounty{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/office)
+"iV" = (
+/obj/effect/turf_decal/delivery,
+/obj/machinery/door/window/westleft{
+	dir = 2
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/office)
+"jp" = (
+/obj/structure/rack,
+/obj/item/flashlight{
+	pixel_x = 1;
+	pixel_y = 5
+	},
+/obj/item/flashlight{
+	pixel_x = 1;
+	pixel_y = 5
+	},
+/obj/item/flashlight{
+	pixel_x = 1;
+	pixel_y = 5
+	},
+/obj/item/flashlight{
+	pixel_x = 1;
+	pixel_y = 5
+	},
+/obj/item/pickaxe{
+	pixel_x = 5
+	},
+/obj/item/shovel{
+	pixel_x = -5
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/miningdock)
+"jr" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"jN" = (
+/obj/machinery/door/firedoor,
+/obj/effect/turf_decal/caution/stand_clear,
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/office)
+"jQ" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"jR" = (
+/obj/effect/turf_decal/bot,
+/obj/structure/closet/crate,
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"kI" = (
+/obj/structure/table,
+/obj/item/stamp/denied{
+	pixel_x = 4;
+	pixel_y = -2
+	},
+/obj/item/stamp{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/office)
+"kR" = (
+/obj/structure/table/reinforced,
+/obj/item/stack/packageWrap{
+	pixel_x = -1;
+	pixel_y = -1
+	},
+/obj/item/stack/wrapping_paper{
+	pixel_x = 3;
+	pixel_y = 4
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel,
+/area/quartermaster/sorting)
+"ll" = (
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"lE" = (
+/obj/structure/closet/secure_closet/miner,
+/obj/item/gps{
+	gpstag = "MINER1"
+	},
+/obj/item/t_scanner/adv_mining_scanner,
+/turf/open/floor/plasteel,
+/area/quartermaster/miningdock)
+"nv" = (
+/obj/structure/rack,
+/obj/item/storage/toolbox/emergency{
+	pixel_y = 4
+	},
+/obj/item/storage/toolbox/emergency{
+	pixel_y = -4
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/miningdock)
+"nG" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/bot,
+/mob/living/simple_animal/bot/mulebot{
+	home_destination = "QM #2";
+	suffix = "#2"
+	},
+/obj/machinery/navbeacon{
+	codes_txt = "delivery;dir=8";
+	dir = 8;
+	freq = 1400;
+	location = "QM #1"
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"oW" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/turf/open/floor/plating,
+/area/quartermaster/office)
+"pb" = (
+/obj/effect/turf_decal/loading_area{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/office)
+"py" = (
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel,
+/area/quartermaster/sorting)
+"pI" = (
+/obj/structure/window/reinforced{
+	dir = 1;
+	layer = 2.9
+	},
+/obj/structure/table/reinforced,
+/obj/item/destTagger,
+/obj/item/destTagger,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel,
+/area/quartermaster/sorting)
+"qF" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/bot,
+/mob/living/simple_animal/bot/mulebot{
+	beacon_freq = 1400;
+	home_destination = "QM #1";
+	suffix = "#1"
+	},
+/obj/machinery/navbeacon{
+	codes_txt = "delivery;dir=8";
+	dir = 8;
+	freq = 1400;
+	location = "QM #2"
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"qM" = (
+/turf/open/floor/plasteel,
+/area/quartermaster/qm)
+"qT" = (
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "packageSort2"
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/sorting)
+"ra" = (
+/obj/machinery/door/poddoor{
+	id = "QMLoaddoor";
+	name = "supply dock loading door"
+	},
+/obj/machinery/conveyor{
+	id = "CargoOut"
+	},
+/turf/open/floor/plasteel/dark,
+/area/quartermaster/storage)
+"rg" = (
+/obj/machinery/quantumpad{
+	map_pad_id = "QM";
+	map_pad_link_id = "QMBridge"
+	},
+/turf/open/floor/engine,
+/area/quartermaster/qm)
+"rk" = (
+/obj/machinery/autolathe{
+	name = "public autolathe"
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/office)
+"rt" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plating,
+/area/quartermaster/sorting)
+"sq" = (
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "packageSort2"
+	},
+/obj/structure/plasticflaps,
+/turf/open/floor/plasteel,
+/area/quartermaster/sorting)
+"sV" = (
+/obj/structure/closet/secure_closet/miner,
+/obj/item/gps{
+	gpstag = "MINER0"
+	},
+/obj/item/t_scanner/adv_mining_scanner,
+/turf/open/floor/plasteel,
+/area/quartermaster/miningdock)
+"tm" = (
+/turf/closed/wall,
+/area/quartermaster/warehouse)
+"tP" = (
+/obj/structure/filingcabinet/filingcabinet,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel,
+/area/quartermaster/sorting)
+"uo" = (
+/obj/machinery/mineral/ore_redemption{
+	input_dir = 2;
+	output_dir = 1
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel,
+/area/quartermaster/miningdock)
+"vd" = (
+/obj/structure/disposalpipe/segment{
+	dir = 10
+	},
+/turf/closed/wall,
+/area/quartermaster/miningdock)
+"vk" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"vy" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/space/basic,
+/area/quartermaster/miningdock)
+"vK" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/vending/wardrobe/cargo_wardrobe,
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"wj" = (
+/obj/structure/table,
+/turf/open/floor/plasteel,
+/area/quartermaster/qm)
+"wC" = (
+/obj/machinery/door/firedoor,
+/obj/effect/turf_decal/caution/stand_clear,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/office)
+"wO" = (
+/obj/docking_port/stationary{
+	dwidth = 5;
+	height = 7;
+	id = "supply_home";
+	name = "Cargo Bay";
+	width = 12
+	},
+/turf/open/space/basic,
+/area/space)
+"xb" = (
+/obj/structure/table/reinforced,
+/obj/item/folder/yellow{
+	pixel_x = 4
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/sorting)
+"xd" = (
+/obj/machinery/door/airlock/mining{
+	req_access_txt = "48"
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel,
+/area/quartermaster/miningdock)
+"xU" = (
+/obj/machinery/autolathe,
+/turf/open/floor/plasteel,
+/area/quartermaster/office)
+"yg" = (
+/obj/machinery/conveyor_switch/oneway{
+	dir = 8;
+	id = "CargoIn"
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"yh" = (
+/turf/open/space/basic,
+/area/space)
+"yi" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/qm)
+"yY" = (
+/obj/structure/chair/office/dark{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/miningdock)
+"yZ" = (
+/obj/machinery/computer/security/qm,
+/turf/open/floor/plasteel,
+/area/quartermaster/qm)
+"zD" = (
+/obj/machinery/rnd/production/techfab/department/cargo,
+/turf/open/floor/plasteel,
+/area/quartermaster/office)
+"zS" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/turf/open/floor/plating,
+/area/quartermaster/storage)
+"AA" = (
+/obj/structure/chair/office/dark,
+/turf/open/floor/plasteel,
+/area/quartermaster/sorting)
+"AG" = (
+/obj/machinery/conveyor{
+	dir = 1;
+	id = "CargoIn"
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel/dark,
+/area/quartermaster/storage)
+"AL" = (
+/turf/open/floor/plasteel,
+/area/quartermaster/office)
+"BC" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/obj/structure/disposalpipe/segment{
+	dir = 5
+	},
+/turf/open/floor/plating,
+/area/quartermaster/sorting)
+"BG" = (
+/obj/machinery/disposal/bin,
+/obj/structure/disposalpipe/trunk{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/qm)
+"BH" = (
+/obj/machinery/computer/cargo{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/office)
+"Cc" = (
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"Cg" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel/dark,
+/area/quartermaster/storage)
+"Cs" = (
+/obj/structure/chair/office/dark,
+/turf/open/floor/plasteel,
+/area/quartermaster/office)
+"Ct" = (
+/turf/open/floor/plating,
+/area/quartermaster/warehouse)
+"CI" = (
+/obj/structure/bed,
+/obj/item/bedsheet/qm,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/landmark/start/quartermaster,
+/turf/open/floor/plasteel,
+/area/quartermaster/qm)
+"CJ" = (
+/obj/effect/turf_decal/bot,
+/obj/structure/window/reinforced,
+/turf/open/floor/plasteel,
+/area/quartermaster/office)
+"DM" = (
+/obj/structure/closet/emcloset,
+/turf/open/floor/plasteel,
+/area/quartermaster/miningdock)
+"DW" = (
+/obj/structure/closet/wardrobe/miner,
+/turf/open/floor/plasteel,
+/area/quartermaster/miningdock)
+"Er" = (
+/turf/open/floor/plasteel,
+/area/quartermaster/miningdock)
+"EK" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/window/westleft{
+	dir = 1;
+	name = "Delivery Desk";
+	req_access_txt = "50"
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel,
+/area/quartermaster/sorting)
+"Fr" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/qm)
+"Gg" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/bot,
+/obj/machinery/navbeacon{
+	codes_txt = "delivery;dir=8";
+	dir = 8;
+	freq = 1400;
+	location = "QM #3"
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"Gx" = (
+/turf/closed/wall/r_wall,
+/area/quartermaster/qm)
+"GK" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"GN" = (
+/turf/closed/wall,
+/area/quartermaster/office)
+"GW" = (
+/obj/structure/closet/secure_closet/miner,
+/obj/item/gps{
+	gpstag = "MINER2"
+	},
+/obj/item/t_scanner/adv_mining_scanner,
+/turf/open/floor/plasteel,
+/area/quartermaster/miningdock)
+"Hv" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"IR" = (
+/obj/structure/rack,
+/turf/open/floor/plasteel,
+/area/quartermaster/office)
+"Jf" = (
+/obj/structure/closet/secure_closet/miner,
+/obj/item/gps{
+	gpstag = "MINER3"
+	},
+/obj/item/t_scanner/adv_mining_scanner,
+/turf/open/floor/plasteel,
+/area/quartermaster/miningdock)
+"JY" = (
+/obj/machinery/computer/cargo/request{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/turf/open/floor/plasteel,
+/area/quartermaster/office)
+"Kh" = (
+/obj/structure/chair,
+/turf/open/floor/plasteel,
+/area/quartermaster/office)
+"Kw" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/computer/cargo,
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"KW" = (
+/obj/machinery/door/airlock/external{
+	name = "Supply Dock Airlock";
+	req_access_txt = "31"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/turf/open/floor/plasteel/dark,
+/area/quartermaster/storage)
+"KZ" = (
+/obj/effect/turf_decal/bot,
+/obj/structure/window/reinforced{
+	dir = 8;
+	layer = 2.9
+	},
+/obj/machinery/door/window/westleft{
+	dir = 2
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/office)
+"LE" = (
+/obj/machinery/conveyor{
+	dir = 1;
+	id = "CargoIn"
+	},
+/obj/structure/plasticflaps,
+/turf/open/floor/plasteel/dark,
+/area/quartermaster/storage)
+"LW" = (
+/obj/structure/table/reinforced,
+/obj/item/hand_labeler{
+	pixel_y = 8
+	},
+/obj/item/hand_labeler{
+	pixel_y = 8
+	},
+/obj/item/storage/box,
+/obj/item/storage/box,
+/obj/item/storage/box,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel,
+/area/quartermaster/sorting)
+"Md" = (
+/turf/open/floor/plasteel,
+/area/quartermaster/sorting)
+"Mo" = (
+/obj/structure/plasticflaps,
+/obj/machinery/door/window/westleft{
+	name = "Cargo Desk";
+	req_access_txt = "50"
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/office)
+"Ms" = (
+/obj/structure/table/reinforced,
+/obj/item/paper_bin{
+	pixel_x = -3
+	},
+/obj/item/pen{
+	pixel_x = -3
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel,
+/area/quartermaster/sorting)
+"MA" = (
+/obj/machinery/conveyor{
+	dir = 1;
+	id = "CargoIn"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"MW" = (
+/obj/machinery/button/door{
+	id = "Warehouse"
+	},
+/turf/closed/wall,
+/area/quartermaster/warehouse)
+"Nd" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/closed/wall,
+/area/quartermaster/miningdock)
+"Nj" = (
+/obj/machinery/door/airlock/external{
+	name = "Mining Dock Airlock";
+	req_access_txt = "48";
+	shuttledocked = 1
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/miningdock)
+"NZ" = (
+/obj/structure/chair/office/dark{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/qm)
+"Pd" = (
+/obj/machinery/door/airlock/external{
+	name = "Mining Dock Airlock";
+	req_access_txt = "48";
+	shuttledocked = 1
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel,
+/area/quartermaster/miningdock)
+"Qc" = (
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "CargoOut"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"Qy" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/closed/wall,
+/area/quartermaster/qm)
+"QC" = (
+/turf/closed/wall,
+/area/quartermaster/sorting)
+"QI" = (
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"QW" = (
+/obj/effect/turf_decal/loading_area,
+/turf/open/floor/plasteel,
+/area/quartermaster/office)
+"Rc" = (
+/obj/machinery/door/poddoor{
+	id = "QMLoaddoor2";
+	name = "supply dock loading door"
+	},
+/obj/machinery/conveyor{
+	dir = 1;
+	id = "CargoIn"
+	},
+/turf/open/floor/plasteel/dark,
+/area/quartermaster/storage)
+"RA" = (
+/obj/machinery/conveyor{
+	id = "CargoOut"
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel/dark,
+/area/quartermaster/storage)
+"Sl" = (
+/obj/machinery/computer/shuttle/mining{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/miningdock)
+"SN" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/obj/effect/turf_decal/bot,
+/obj/machinery/navbeacon{
+	codes_txt = "delivery;dir=8";
+	dir = 8;
+	freq = 1400;
+	location = "QM #4"
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"Ta" = (
+/obj/structure/plasticflaps/opaque,
+/obj/machinery/door/airlock/mining/glass{
+	name = "Quartermaster";
+	req_access_txt = "41"
+	},
+/turf/open/floor/engine,
+/area/quartermaster/qm)
+"Td" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/turf/open/floor/plating,
+/area/quartermaster/sorting)
+"TL" = (
+/obj/machinery/door/airlock/mining/glass{
+	name = "Delivery Office";
+	req_access_txt = "50"
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel,
+/area/quartermaster/office)
+"TW" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/quartermaster/storage)
+"Ue" = (
+/turf/template_noop,
+/area/template_noop)
+"Uk" = (
+/obj/machinery/computer/bounty,
+/turf/open/floor/plasteel,
+/area/quartermaster/qm)
+"Uv" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/closed/wall,
+/area/quartermaster/sorting)
+"UA" = (
+/obj/structure/lattice,
+/turf/open/space/basic,
+/area/space/nearstation)
+"Vo" = (
+/obj/structure/table,
+/obj/item/paper_bin{
+	pixel_x = -3;
+	pixel_y = 7
+	},
+/obj/item/pen/red,
+/obj/item/clipboard,
+/turf/open/floor/plasteel,
+/area/quartermaster/office)
+"VF" = (
+/obj/machinery/door/airlock/mining/glass{
+	name = "Quartermaster";
+	req_access_txt = "41"
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/qm)
+"VN" = (
+/turf/closed/wall,
+/area/quartermaster/miningdock)
+"Wm" = (
+/obj/machinery/door/airlock/external{
+	name = "Supply Dock Airlock";
+	req_access_txt = "31"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/quartermaster/storage)
+"WA" = (
+/obj/structure/closet/secure_closet/quartermaster,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/qm)
+"WL" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plasteel/dark,
+/area/quartermaster/storage)
+"XA" = (
+/turf/open/space/basic,
+/area/space/nearstation)
+"Yc" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"Ze" = (
+/obj/machinery/conveyor{
+	id = "CargoOut"
+	},
+/obj/structure/plasticflaps,
+/turf/open/floor/plasteel/dark,
+/area/quartermaster/storage)
+"Zn" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/turf/open/floor/plating,
+/area/quartermaster/miningdock)
+"ZB" = (
+/obj/structure/window/reinforced{
+	dir = 1;
+	layer = 2.9
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel,
+/area/quartermaster/sorting)
+"ZE" = (
+/obj/machinery/mineral/equipment_vendor,
+/turf/open/floor/plasteel,
+/area/quartermaster/miningdock)
+"ZJ" = (
+/obj/structure/lattice,
+/obj/structure/lattice,
+/turf/open/space/basic,
+/area/space/nearstation)
+"ZK" = (
+/obj/machinery/door/poddoor/shutters{
+	id = "Warehouse";
+	name = "Warehouse shutters"
+	},
+/turf/open/floor/plating,
+/area/quartermaster/warehouse)
+
+(1,1,1) = {"
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Gx
+Gx
+Gx
+ex
+ex
+Qy
+ex
+GN
+Mo
+GN
+GN
+GN
+GN
+oW
+wC
+wC
+wC
+oW
+GN
+Ue
+Ue
+"}
+(2,1,1) = {"
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Gx
+rg
+Ta
+qM
+qM
+CI
+ex
+IR
+AL
+AL
+AL
+AL
+oW
+AL
+AL
+AL
+AL
+AL
+oW
+Ue
+Ue
+"}
+(3,1,1) = {"
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Gx
+Gx
+Gx
+Fr
+qM
+WA
+ex
+AL
+AL
+AL
+AL
+AL
+gG
+AL
+AL
+AL
+AL
+AL
+jN
+Ue
+Ue
+"}
+(4,1,1) = {"
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+ex
+eX
+qM
+qM
+qM
+yi
+VF
+AL
+AL
+AL
+AL
+AL
+oW
+AL
+AL
+AL
+AL
+AL
+jN
+Ue
+Ue
+"}
+(5,1,1) = {"
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+ex
+yZ
+NZ
+qM
+qM
+yi
+ex
+AL
+AL
+AL
+AL
+AL
+oW
+AL
+AL
+AL
+AL
+AL
+oW
+Ue
+Ue
+"}
+(6,1,1) = {"
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+ex
+Uk
+qM
+qM
+qM
+yi
+ex
+xU
+AL
+AL
+AL
+AL
+GN
+KZ
+pb
+AL
+AL
+rk
+GN
+Ue
+Ue
+"}
+(7,1,1) = {"
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+ex
+wj
+wj
+qM
+qM
+BG
+ex
+zD
+AL
+AL
+AL
+AL
+GN
+CJ
+Kh
+AL
+AL
+AL
+oW
+Ue
+Ue
+"}
+(8,1,1) = {"
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+IR
+AL
+AL
+AL
+AL
+oW
+CJ
+Kh
+AL
+AL
+AL
+jN
+Ue
+Ue
+"}
+(9,1,1) = {"
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+tm
+Ct
+Ct
+Ct
+Ct
+Ct
+tm
+IR
+AL
+AL
+kI
+BH
+oW
+CJ
+Kh
+AL
+AL
+AL
+jN
+Ue
+Ue
+"}
+(10,1,1) = {"
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+tm
+Ct
+Ct
+Ct
+Ct
+Ct
+tm
+IR
+AL
+AL
+AL
+Cs
+iu
+iV
+QW
+AL
+AL
+AL
+jN
+Ue
+Ue
+"}
+(11,1,1) = {"
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+tm
+Ct
+Ct
+Ct
+Ct
+Ct
+tm
+IR
+AL
+AL
+Vo
+iT
+oW
+JY
+AL
+AL
+AL
+AL
+oW
+Ue
+Ue
+"}
+(12,1,1) = {"
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+tm
+tm
+ZK
+ZK
+ZK
+MW
+tm
+GN
+ei
+dT
+GN
+GN
+GN
+GN
+GN
+TL
+GN
+GN
+GN
+Ue
+Ue
+"}
+(13,1,1) = {"
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+cY
+ee
+jr
+jr
+jr
+jr
+nG
+qF
+jr
+jr
+Gg
+SN
+QC
+bf
+ZB
+py
+tP
+Ms
+rt
+Ue
+Ue
+"}
+(14,1,1) = {"
+XA
+UA
+UA
+UA
+UA
+UA
+UA
+UA
+UA
+UA
+XA
+XA
+cY
+eW
+fd
+fd
+fd
+fd
+fd
+fd
+fd
+fd
+fd
+QI
+QC
+qT
+fr
+Md
+Md
+AA
+EK
+Ue
+Ue
+"}
+(15,1,1) = {"
+XA
+UA
+yh
+yh
+yh
+yh
+yh
+yh
+yh
+UA
+XA
+XA
+cY
+Yc
+bS
+fd
+fd
+fd
+fd
+fd
+fd
+fd
+fd
+QI
+QC
+qT
+hz
+Md
+Md
+xb
+Td
+Ue
+Ue
+"}
+(16,1,1) = {"
+XA
+UA
+yh
+yh
+yh
+yh
+yh
+yh
+yh
+UA
+XA
+XA
+zS
+Qc
+fd
+jR
+Cc
+fd
+ll
+Cc
+fd
+ll
+Cc
+vK
+QC
+qT
+Md
+Md
+Md
+Md
+QC
+Ue
+Ue
+"}
+(17,1,1) = {"
+XA
+UA
+yh
+yh
+yh
+yh
+yh
+yh
+yh
+UA
+XA
+XA
+zS
+Qc
+iv
+Cc
+ll
+fd
+Cc
+ll
+fd
+ig
+jR
+QI
+QC
+qT
+Md
+Md
+Md
+Md
+Td
+Ue
+Ue
+"}
+(18,1,1) = {"
+XA
+UA
+yh
+yh
+yh
+yh
+yh
+yh
+yh
+aJ
+WL
+WL
+zS
+Qc
+fd
+fd
+fd
+fd
+fd
+fd
+fd
+fd
+fd
+QI
+QC
+sq
+fr
+Md
+Md
+Md
+Td
+Ue
+Ue
+"}
+(19,1,1) = {"
+XA
+UA
+yh
+yh
+yh
+yh
+yh
+yh
+yh
+ra
+Ze
+ra
+RA
+Qc
+fd
+ll
+Cc
+fd
+jR
+Cc
+fd
+ll
+Cc
+QI
+QC
+ea
+pI
+LW
+kR
+py
+BC
+Ue
+Ue
+"}
+(20,1,1) = {"
+XA
+UA
+yh
+yh
+yh
+yh
+yh
+yh
+wO
+KW
+at
+Wm
+gF
+eW
+fd
+Cc
+ll
+fd
+Cc
+jR
+fd
+Cc
+ll
+QI
+QC
+QC
+QC
+QC
+QC
+QC
+Uv
+Ue
+Ue
+"}
+(21,1,1) = {"
+XA
+UA
+yh
+yh
+yh
+yh
+yh
+yh
+yh
+aJ
+WL
+WL
+Cg
+Kw
+fd
+fd
+fd
+fd
+fd
+fd
+fd
+fd
+fd
+QI
+VN
+ZE
+Er
+DW
+Er
+ZE
+Nd
+Ue
+Ue
+"}
+(22,1,1) = {"
+XA
+UA
+yh
+yh
+yh
+yh
+yh
+yh
+yh
+KW
+at
+Wm
+gF
+eW
+fd
+jR
+Cc
+fd
+ll
+Cc
+fd
+ll
+Cc
+QI
+VN
+sV
+fp
+Er
+fp
+GW
+Nd
+Ue
+Ue
+"}
+(23,1,1) = {"
+XA
+UA
+yh
+yh
+yh
+yh
+yh
+yh
+yh
+Rc
+LE
+Rc
+AG
+MA
+fd
+ig
+ll
+Cc
+ll
+ll
+fd
+Cc
+ll
+QI
+VN
+lE
+fp
+Er
+fp
+Jf
+Nd
+Ue
+Ue
+"}
+(24,1,1) = {"
+XA
+UA
+yh
+yh
+yh
+yh
+yh
+yh
+yh
+aJ
+WL
+WL
+zS
+hS
+fd
+fd
+fd
+fd
+fd
+fd
+fd
+fd
+fd
+QI
+xd
+Er
+Er
+Er
+Er
+Er
+Nd
+Ue
+Ue
+"}
+(25,1,1) = {"
+XA
+UA
+yh
+yh
+yh
+yh
+yh
+yh
+yh
+UA
+XA
+XA
+zS
+hS
+yg
+ll
+ig
+fd
+jR
+Cc
+fd
+ll
+Cc
+QI
+VN
+Er
+Er
+Er
+Er
+DM
+Nd
+Ue
+Ue
+"}
+(26,1,1) = {"
+XA
+UA
+yh
+yh
+yh
+yh
+yh
+yh
+yh
+UA
+XA
+XA
+zS
+hS
+fd
+Cc
+ll
+fd
+Cc
+ll
+fd
+Cc
+jR
+QI
+uo
+Er
+Er
+Er
+Er
+DM
+Nd
+Ue
+Ue
+"}
+(27,1,1) = {"
+XA
+UA
+UA
+UA
+UA
+UA
+UA
+UA
+UA
+UA
+XA
+XA
+cY
+jQ
+fd
+fd
+fd
+fd
+fd
+fd
+fd
+fd
+fd
+QI
+VN
+Er
+Er
+Er
+Er
+Er
+Nd
+Ue
+Ue
+"}
+(28,1,1) = {"
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+cY
+eW
+fd
+ll
+Cc
+fd
+jR
+Cc
+fd
+ll
+ig
+QI
+VN
+Er
+Er
+Er
+Er
+Er
+Nd
+Ue
+Ue
+"}
+(29,1,1) = {"
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+XA
+cY
+eW
+fd
+Cc
+ll
+fd
+ig
+ll
+fd
+ig
+ll
+QI
+VN
+Er
+yY
+Er
+yY
+Er
+Nd
+Ue
+Ue
+"}
+(30,1,1) = {"
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+XA
+cY
+vk
+Hv
+Hv
+Hv
+Hv
+Hv
+Hv
+Hv
+Hv
+Hv
+GK
+VN
+nv
+fM
+Er
+Sl
+jp
+Nd
+Ue
+Ue
+"}
+(31,1,1) = {"
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+XA
+cY
+TW
+TW
+TW
+TW
+TW
+TW
+TW
+TW
+TW
+TW
+TW
+VN
+Zn
+Zn
+Pd
+Zn
+Zn
+vd
+Ue
+Ue
+"}
+(32,1,1) = {"
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+vy
+Er
+vy
+XA
+XA
+XA
+XA
+"}
+(33,1,1) = {"
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+XA
+UA
+UA
+UA
+vy
+Nj
+vy
+UA
+UA
+UA
+XA
+"}
+(34,1,1) = {"
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+XA
+ZJ
+yh
+yh
+yh
+aB
+yh
+yh
+yh
+UA
+XA
+"}
+(35,1,1) = {"
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+XA
+UA
+yh
+yh
+yh
+yh
+yh
+yh
+yh
+UA
+XA
+"}
+(36,1,1) = {"
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+XA
+UA
+yh
+yh
+yh
+yh
+yh
+yh
+yh
+UA
+XA
+"}
+(37,1,1) = {"
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+XA
+UA
+yh
+yh
+yh
+yh
+yh
+yh
+yh
+UA
+XA
+"}
+(38,1,1) = {"
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+XA
+UA
+yh
+yh
+yh
+yh
+yh
+yh
+yh
+UA
+XA
+"}
+(39,1,1) = {"
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+XA
+ZJ
+UA
+UA
+UA
+UA
+UA
+UA
+UA
+ZJ
+XA
+"}
+(40,1,1) = {"
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+Ue
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+"}

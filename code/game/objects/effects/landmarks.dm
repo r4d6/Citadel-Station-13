@@ -481,3 +481,55 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 /obj/effect/landmark/stationroom/box/engine/New()
 	. = ..()
 	template_names = CONFIG_GET(keyed_list/box_random_engine)
+
+// Modular Station
+	// AI Sat
+/obj/effect/landmark/stationroom/modular/ai
+	template_names = list("AI 01")
+	icon = 'icons/rooms/modular/ai_sat.dmi'
+
+	// Bridge
+/obj/effect/landmark/stationroom/modular/bridge
+	template_names = list("Bridge 01")
+	icon = 'icons/rooms/modular/bridge.dmi'
+
+	// Cargo
+
+
+	// Dorms
+/obj/effect/landmark/stationroom/modular/service
+	template_names = list("Dorms 01")
+	icon = 'icons/rooms/modular/dorms.dmi'
+
+	// Evac/Arrival
+
+
+	// Medical
+/obj/effect/landmark/stationroom/modular/service
+	template_names = list("Medical 01")
+	icon = 'icons/rooms/modular/medical.dmi'
+
+		// Chemistry
+
+
+	// Science
+
+
+	// Security
+
+
+	// Service
+/obj/effect/landmark/stationroom/modular/service
+	template_names = list("Service 01")
+	icon = 'icons/rooms/modular/service.dmi'
+
+		// Bar & Kitchen
+
+
+	// Engineering
+
+
+		// T-Comm
+/obj/effect/landmark/stationroom/modular/bridge
+	template_names = list("T-Comm 01")
+	icon = 'icons/rooms/modular/t-comm.dmi'
