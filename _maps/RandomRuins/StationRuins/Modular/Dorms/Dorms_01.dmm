@@ -170,6 +170,10 @@
 	},
 /turf/open/floor/carpet,
 /area/crew_quarters/dorms)
+"I" = (
+/obj/machinery/atmospherics/pipe/manifold4w/supply/hidden,
+/turf/open/floor/plasteel,
+/area/crew_quarters/dorms)
 "J" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -193,6 +197,10 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 1
 	},
+/turf/open/floor/plasteel,
+/area/crew_quarters/dorms)
+"M" = (
+/obj/machinery/atmospherics/pipe/manifold4w/scrubbers,
 /turf/open/floor/plasteel,
 /area/crew_quarters/dorms)
 "N" = (
@@ -353,7 +361,7 @@ X
 A
 s
 A
-Z
+I
 A
 s
 A
@@ -369,7 +377,7 @@ L
 r
 o
 r
-Z
+M
 r
 o
 r
