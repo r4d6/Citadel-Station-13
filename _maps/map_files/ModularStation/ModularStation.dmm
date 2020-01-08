@@ -336,7 +336,9 @@
 /turf/closed/wall,
 /area/space)
 "ce" = (
-/obj/machinery/atmospherics/components/unary/tank/toxins,
+/obj/machinery/atmospherics/components/unary/tank/toxins{
+	dir = 1
+	},
 /obj/structure/window/reinforced,
 /turf/open/floor/plasteel,
 /area/space)
@@ -632,6 +634,16 @@
 	},
 /turf/open/floor/plasteel,
 /area/space)
+"eV" = (
+/obj/machinery/atmospherics/components/unary/tank/nitrous_oxide{
+	dir = 1
+	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/space)
 "eX" = (
 /obj/machinery/atmospherics/components/unary/heat_exchanger{
 	dir = 1
@@ -846,10 +858,12 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "hm" = (
-/obj/machinery/atmospherics/components/unary/tank/air,
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/tank/air{
+	dir = 1
 	},
 /turf/open/floor/plasteel,
 /area/space)
@@ -1269,7 +1283,9 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "lO" = (
-/obj/machinery/atmospherics/components/unary/tank/nitrogen,
+/obj/machinery/atmospherics/components/unary/tank/nitrogen{
+	dir = 1
+	},
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 4
@@ -1312,7 +1328,9 @@
 /turf/open/floor/plasteel,
 /area/tcommsat/computer)
 "my" = (
-/obj/machinery/atmospherics/components/unary/tank/nitrous_oxide,
+/obj/machinery/atmospherics/components/unary/tank/nitrous_oxide{
+	dir = 1
+	},
 /obj/structure/window/reinforced,
 /turf/open/floor/plasteel,
 /area/space)
@@ -1758,7 +1776,9 @@
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "rq" = (
-/obj/machinery/atmospherics/components/unary/tank/nitrogen,
+/obj/machinery/atmospherics/components/unary/tank/nitrogen{
+	dir = 1
+	},
 /obj/structure/window/reinforced,
 /turf/open/floor/plasteel,
 /area/space)
@@ -2019,6 +2039,13 @@
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
+"tQ" = (
+/obj/machinery/atmospherics/components/unary/tank/oxygen{
+	dir = 1
+	},
+/obj/structure/window/reinforced,
+/turf/open/floor/plasteel,
+/area/space)
 "tT" = (
 /obj/machinery/atmospherics/pipe/simple/supply/visible,
 /obj/machinery/atmospherics/components/binary/pump{
@@ -2420,7 +2447,9 @@
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "yH" = (
-/obj/machinery/atmospherics/components/unary/tank/carbon_dioxide,
+/obj/machinery/atmospherics/components/unary/tank/carbon_dioxide{
+	dir = 1
+	},
 /obj/structure/window/reinforced,
 /turf/open/floor/plasteel,
 /area/space)
@@ -2898,7 +2927,9 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "Da" = (
-/obj/machinery/atmospherics/components/unary/tank/oxygen,
+/obj/machinery/atmospherics/components/unary/tank/oxygen{
+	dir = 1
+	},
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 4
@@ -3138,7 +3169,9 @@
 /turf/open/floor/engine,
 /area/engine/atmospherics_engine)
 "Fi" = (
-/obj/machinery/atmospherics/components/unary/tank/air,
+/obj/machinery/atmospherics/components/unary/tank/air{
+	dir = 1
+	},
 /obj/structure/window/reinforced,
 /turf/open/floor/plasteel,
 /area/space)
@@ -3848,7 +3881,9 @@
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness)
 "LU" = (
-/obj/machinery/atmospherics/components/unary/tank/toxins,
+/obj/machinery/atmospherics/components/unary/tank/toxins{
+	dir = 1
+	},
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 8
@@ -4254,7 +4289,9 @@
 /turf/open/space/basic,
 /area/solar/port/aft)
 "PD" = (
-/obj/machinery/atmospherics/components/unary/tank/carbon_dioxide,
+/obj/machinery/atmospherics/components/unary/tank/carbon_dioxide{
+	dir = 1
+	},
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 8
@@ -35092,7 +35129,7 @@ rq
 BD
 Oo
 Lx
-pR
+tQ
 BD
 BD
 pr
@@ -37397,7 +37434,7 @@ BD
 BD
 tq
 bt
-qU
+eV
 BD
 rL
 bC
