@@ -486,32 +486,32 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 // Modular Station
 	// AI Sat
 /obj/effect/landmark/stationroom/modular/ai
-	template_names = list("AI 01")
+	templates = list("AI 01")
 	icon = 'icons/rooms/modular/ai_sat.dmi'
 
 	// Bridge
 /obj/effect/landmark/stationroom/modular/bridge
-	template_names = list("Bridge 01")
+	templates = list("Bridge 01")
 	icon = 'icons/rooms/modular/bridge.dmi'
 
 	// Cargo
 /obj/effect/landmark/stationroom/modular/cargo
-	template_names = list("Cargo 01")
+	templates = list("Cargo 01")
 	icon = 'icons/rooms/modular/cargo.dmi'
 
 	// Dorms
 /obj/effect/landmark/stationroom/modular/dorms
-	template_names = list("Dorms 01")
+	templates = list("Dorms 01")
 	icon = 'icons/rooms/modular/dorms.dmi'
 
 	// Evac_Arrival
 /obj/effect/landmark/stationroom/modular/evac_arrival
-	template_names = list("Evac_Arrival 01")
+	templates = list("Evac_Arrival 01")
 	icon = 'icons/rooms/modular/evac_arrival.dmi'
 
 	// Medical
 /obj/effect/landmark/stationroom/modular/medical
-	template_names = list("Medical 01")
+	templates = list("Medical 01")
 	icon = 'icons/rooms/modular/medical.dmi'
 
 		// Chemistry
@@ -519,7 +519,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 	// Science
 /obj/effect/landmark/stationroom/modular/science
-	template_names = list("Science 01")
+	templates = list("Science 01")
 	icon = 'icons/rooms/modular/science.dmi'
 
 	// Security
@@ -527,7 +527,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 	// Service
 /obj/effect/landmark/stationroom/modular/service
-	template_names = list("Service 01")
+	templates = list("Service 01")
 	icon = 'icons/rooms/modular/service.dmi'
 
 		// Bar & Kitchen
@@ -538,4 +538,4 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 		// T-Comm
 /obj/effect/landmark/stationroom/modular/t_comm
-	template_names = list("T_Comm 01")
+	templates = list("T_Comm 01")
