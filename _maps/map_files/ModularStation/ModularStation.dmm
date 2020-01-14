@@ -123,17 +123,6 @@
 /obj/structure/chair/stool,
 /turf/open/floor/plating,
 /area/maintenance/solars/port/aft)
-"aD" = (
-/obj/machinery/door/airlock/engineering/glass{
-	name = "Server Room";
-	req_access_txt = "61"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel,
-/area/tcommsat/server)
 "aJ" = (
 /turf/closed/wall,
 /area/crew_quarters/toilet)
@@ -234,26 +223,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/space)
-"bo" = (
-/obj/machinery/door/airlock/engineering{
-	name = "Telecommunications";
-	req_access_txt = "61"
-	},
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
-"br" = (
-/obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
 "bt" = (
 /obj/machinery/atmospherics/pipe/manifold4w/orange/visible,
 /obj/item/pipe_meter,
 /turf/open/floor/plasteel,
 /area/space)
-"bv" = (
-/obj/structure/table,
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
 "bC" = (
 /obj/machinery/atmospherics/pipe/manifold4w/dark/visible,
 /obj/item/pipe_meter,
@@ -268,10 +242,6 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/solars/port/aft)
-"bG" = (
-/obj/machinery/telecomms/server/presets/service,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
 "bH" = (
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/visible,
 /obj/item/pipe_meter,
@@ -311,10 +281,6 @@
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
-"bV" = (
-/obj/machinery/ntnet_relay,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
 "bY" = (
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -483,10 +449,10 @@
 /turf/open/floor/plating,
 /area/maintenance/solars/port/aft)
 "dp" = (
-/obj/structure/disposalpipe/junction,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/space)
 "dr" = (
@@ -568,10 +534,6 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/solars/port/aft)
-"et" = (
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
 "ey" = (
 /obj/structure/disposalpipe/junction/flip{
 	dir = 1
@@ -754,19 +716,13 @@
 /obj/effect/turf_decal/tile/red,
 /turf/open/floor/plasteel,
 /area/space)
-"ga" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
 "gh" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/structure/cable{
 	icon_state = "4-8"
+	},
+/obj/machinery/light/floor,
+/obj/structure/disposalpipe/junction/flip{
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/space)
@@ -820,19 +776,6 @@
 /obj/machinery/light/floor,
 /turf/open/floor/plasteel,
 /area/space)
-"gG" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
-/turf/open/floor/plating,
-/area/tcommsat/server)
 "gX" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
 	dir = 9
@@ -1202,12 +1145,6 @@
 "ld" = (
 /turf/open/floor/plasteel/dark,
 /area/engine/gravity_generator)
-"le" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/turf/closed/wall/r_wall,
-/area/tcommsat/computer)
 "lg" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/cable{
@@ -1271,12 +1208,6 @@
 	},
 /turf/open/floor/engine,
 /area/engine/atmospherics_engine)
-"lJ" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
 "lM" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /obj/machinery/airalarm{
@@ -1307,20 +1238,10 @@
 	},
 /turf/closed/wall,
 /area/engine/gravity_generator)
-"lU" = (
-/obj/machinery/telecomms/server/presets/supply,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
 "mc" = (
 /obj/machinery/atmospherics/components/trinary/mixer/airmix/flipped,
 /turf/open/floor/plasteel,
 /area/space)
-"mj" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 10
-	},
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
 "ml" = (
 /obj/effect/landmark/start/station_engineer,
 /obj/machinery/light/floor,
@@ -1330,12 +1251,6 @@
 /obj/machinery/atmospherics/pipe/simple/supplymain,
 /turf/open/floor/plasteel,
 /area/space)
-"mt" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
 "my" = (
 /obj/machinery/atmospherics/components/unary/tank/nitrous_oxide{
 	dir = 1
@@ -1392,25 +1307,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/gravity_generator)
-"nd" = (
-/obj/machinery/power/apc/highcap/five_k{
-	areastring = "/area/tcommsat/server";
-	dir = 4;
-	name = "Telecomms Server APC";
-	pixel_x = 25
-	},
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/machinery/power/terminal{
-	dir = 4
-	},
-/turf/open/floor/circuit/telecomms/mainframe,
-/area/tcommsat/server)
-"nf" = (
-/obj/machinery/telecomms/server/presets/engineering,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
 "nh" = (
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -1588,10 +1484,6 @@
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
-"oA" = (
-/obj/machinery/telecomms/message_server,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
 "oO" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 8
@@ -1639,31 +1531,9 @@
 /obj/machinery/light/floor,
 /turf/open/floor/plasteel,
 /area/space)
-"pB" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on,
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
 "pE" = (
 /turf/closed/wall/r_wall,
 /area/engine/engineering)
-"pH" = (
-/obj/structure/table,
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
-"pQ" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
-"pR" = (
-/obj/machinery/atmospherics/components/unary/tank/oxygen,
-/obj/structure/window/reinforced,
-/turf/open/floor/plasteel,
-/area/space)
 "pV" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 6
@@ -1693,12 +1563,10 @@
 /turf/open/floor/plasteel,
 /area/space)
 "qs" = (
-/obj/structure/disposalpipe/junction/flip{
-	dir = 2
-	},
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/space)
 "qt" = (
@@ -1739,18 +1607,6 @@
 	},
 /turf/open/floor/plating,
 /area/crew_quarters/fitness)
-"qR" = (
-/obj/machinery/telecomms/receiver/preset_right,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
-"qU" = (
-/obj/machinery/atmospherics/components/unary/tank/nitrous_oxide,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/space)
 "qV" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/closed/wall,
@@ -1803,12 +1659,6 @@
 	},
 /turf/closed/wall/r_wall,
 /area/engine/atmospherics_engine)
-"rx" = (
-/obj/machinery/power/terminal{
-	dir = 4
-	},
-/turf/open/floor/circuit/telecomms/mainframe,
-/area/tcommsat/server)
 "rA" = (
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 4;
@@ -1816,10 +1666,6 @@
 	},
 /turf/open/floor/engine,
 /area/engine/atmospherics_engine)
-"rB" = (
-/obj/machinery/telecomms/server/presets/command,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
 "rD" = (
 /obj/structure/rack,
 /obj/item/clothing/head/welding{
@@ -2015,9 +1861,6 @@
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
-"tx" = (
-/turf/closed/wall/r_wall,
-/area/tcommsat/computer)
 "ty" = (
 /turf/open/floor/plating,
 /area/engine/engineering)
@@ -2073,11 +1916,6 @@
 	},
 /turf/closed/wall,
 /area/engine/gravity_generator)
-"uh" = (
-/obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
-/turf/open/floor/plasteel,
-/area/space)
 "ul" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/visible,
 /turf/open/floor/plasteel,
@@ -2132,24 +1970,6 @@
 /obj/machinery/the_singularitygen/tesla,
 /turf/open/floor/plating,
 /area/engine/engineering)
-"vq" = (
-/obj/machinery/telecomms/server/presets/science,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
-"vz" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
-"vA" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/open/floor/plasteel,
-/area/space)
 "vC" = (
 /obj/machinery/light,
 /turf/open/floor/plasteel/dark,
@@ -2230,16 +2050,6 @@
 	},
 /turf/open/floor/plasteel/airless/solarpanel,
 /area/solar/port/aft)
-"vZ" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/turf/open/floor/plating,
-/area/tcommsat/server)
 "wc" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 6
@@ -2353,12 +2163,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/freezer,
 /area/crew_quarters/toilet)
-"xm" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/turf/closed/wall/r_wall,
-/area/tcommsat/computer)
 "xr" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -2404,11 +2208,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/space)
-"xL" = (
-/obj/structure/table,
-/obj/item/multitool,
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
 "xX" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible{
 	dir = 4
@@ -2462,13 +2261,6 @@
 /obj/structure/window/reinforced,
 /turf/open/floor/plasteel,
 /area/space)
-"yL" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/turf/open/floor/plating,
-/area/tcommsat/server)
 "yN" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 9
@@ -2611,9 +2403,6 @@
 /obj/effect/spawner/structure/window/plasma/reinforced,
 /turf/open/floor/plating,
 /area/engine/atmospherics_engine)
-"zS" = (
-/turf/closed/wall/r_wall,
-/area/tcommsat/server)
 "zT" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/cable{
@@ -2621,10 +2410,6 @@
 	},
 /turf/open/space/basic,
 /area/solar/port/aft)
-"zV" = (
-/obj/machinery/telecomms/server/presets/medical,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
 "zW" = (
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -2774,10 +2559,6 @@
 "BD" = (
 /turf/open/floor/plasteel,
 /area/space)
-"BE" = (
-/obj/machinery/telecomms/broadcaster/preset_right,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
 "BL" = (
 /obj/structure/sign/warning/radiation/rad_area{
 	pixel_x = 32
@@ -2955,13 +2736,6 @@
 /obj/machinery/power/supermatter_crystal/engine,
 /turf/open/floor/engine,
 /area/engine/atmospherics_engine)
-"Di" = (
-/obj/machinery/door/airlock/command/glass{
-	name = "Control Room";
-	req_access_txt = "19; 61"
-	},
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
 "Dl" = (
 /obj/machinery/atmospherics/pipe/manifold4w/dark/visible,
 /obj/machinery/light{
@@ -3016,10 +2790,6 @@
 /obj/item/pipe_meter,
 /turf/open/floor/plasteel,
 /area/space)
-"DJ" = (
-/obj/machinery/computer/telecomms/monitor,
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
 "DQ" = (
 /obj/machinery/power/smes,
 /obj/structure/cable,
@@ -3079,15 +2849,6 @@
 /obj/machinery/atmospherics/pipe/manifold4w/supply/hidden,
 /turf/open/floor/plasteel,
 /area/space)
-"EH" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/turf/open/floor/circuit/telecomms/mainframe,
-/area/tcommsat/server)
 "EJ" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 8
@@ -3243,10 +3004,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel,
 /area/space)
-"FQ" = (
-/obj/machinery/computer/telecomms/server,
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
 "FS" = (
 /obj/machinery/atmospherics/pipe/manifold4w/general/visible,
 /obj/item/pipe_meter,
@@ -3273,12 +3030,11 @@
 /turf/open/floor/plasteel,
 /area/engine/gravity_generator)
 "FZ" = (
-/obj/structure/disposalpipe/junction/flip{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/structure/cable{
 	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/space)
@@ -3413,17 +3169,6 @@
 /obj/structure/closet/crate/solarpanel_small,
 /turf/open/floor/plasteel,
 /area/engine/engineering)
-"Hw" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/light/floor,
-/turf/open/floor/plasteel,
-/area/space)
 "Hy" = (
 /obj/structure/window/reinforced,
 /obj/machinery/vending/tool,
@@ -3640,16 +3385,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/engine/engine_smes)
-"JT" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plating,
-/area/tcommsat/server)
 "JU" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos/n2,
 /turf/open/floor/plasteel,
@@ -3690,12 +3425,6 @@
 /obj/machinery/suit_storage_unit/ce,
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/chief)
-"Kn" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
 "Kr" = (
 /obj/machinery/atmospherics/components/unary/tank/nitrogen,
 /obj/structure/window/reinforced{
@@ -3812,19 +3541,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/space)
-"Lc" = (
-/obj/machinery/door/airlock/engineering/glass{
-	name = "Server Room";
-	req_access_txt = "61"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
 "Lh" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -3919,10 +3635,6 @@
 	},
 /turf/closed/wall/r_wall,
 /area/space)
-"Ml" = (
-/obj/machinery/announcement_system,
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
 "Mo" = (
 /turf/closed/wall,
 /area/engine/engine_smes)
@@ -3948,10 +3660,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/engine/atmospherics_engine)
-"Mx" = (
-/obj/machinery/telecomms/server/presets/security,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
 "MA" = (
 /obj/structure/closet/crate,
 /obj/item/stack/sheet/metal/fifty,
@@ -4010,10 +3718,6 @@
 /obj/structure/closet/emcloset/anchored,
 /turf/open/floor/plasteel,
 /area/maintenance/port/aft)
-"Nc" = (
-/obj/machinery/telecomms/bus/preset_three,
-/turf/open/floor/circuit/telecomms/mainframe,
-/area/tcommsat/server)
 "Nf" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 8
@@ -4038,11 +3742,11 @@
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "Nx" = (
-/obj/structure/disposalpipe/junction/flip{
-	dir = 4
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/space)
@@ -4097,13 +3801,6 @@
 "NL" = (
 /turf/closed/wall/r_wall,
 /area/space)
-"NO" = (
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden,
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
 "NR" = (
 /obj/structure/disposalpipe/segment{
 	dir = 10
@@ -4187,10 +3884,6 @@
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
-"OA" = (
-/obj/machinery/holopad,
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
 "OC" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -4219,13 +3912,6 @@
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
-"OT" = (
-/obj/structure/closet/emcloset,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
 "OW" = (
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -4338,19 +4024,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/space)
-"PO" = (
-/obj/machinery/requests_console{
-	announcementConsole = 1;
-	department = "Telecomms Admin";
-	departmentType = 5;
-	name = "Telecomms RC";
-	pixel_x = 30
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
 "PU" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -4385,12 +4058,6 @@
 /obj/structure/table,
 /turf/open/floor/plasteel,
 /area/space)
-"Ql" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/open/floor/circuit/telecomms/mainframe,
-/area/tcommsat/server)
 "Qo" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
@@ -4486,10 +4153,6 @@
 /obj/structure/window/plasma/reinforced,
 /turf/open/space/basic,
 /area/engine/atmospherics_engine)
-"QZ" = (
-/obj/machinery/computer/message_monitor,
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
 "Ra" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -4547,12 +4210,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/space)
-"Rp" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 1
-	},
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
 "Rq" = (
 /obj/machinery/atmospherics/pipe/manifold/general/visible{
 	dir = 4
@@ -4603,13 +4260,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/engine_smes)
-"RJ" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
 "RL" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -4718,11 +4368,6 @@
 /area/engine/engineering{
 	name = "Engine Hallway"
 	})
-"SR" = (
-/obj/structure/table,
-/obj/item/radio/off,
-/turf/open/floor/plasteel,
-/area/tcommsat/computer)
 "SS" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -4836,9 +4481,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/space)
-"Tx" = (
-/turf/open/floor/circuit/telecomms/mainframe,
-/area/tcommsat/server)
 "TD" = (
 /turf/closed/wall/r_wall,
 /area/maintenance/solars/port/aft)
@@ -5012,10 +4654,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/space)
-"Vt" = (
-/obj/machinery/telecomms/hub/preset,
-/turf/open/floor/circuit/telecomms/mainframe,
-/area/tcommsat/server)
 "Vu" = (
 /obj/machinery/computer/station_alert{
 	dir = 4
@@ -5039,10 +4677,6 @@
 /obj/machinery/light/floor,
 /turf/open/floor/plasteel,
 /area/space)
-"VE" = (
-/obj/machinery/telecomms/server/presets/common,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
 "VL" = (
 /turf/closed/wall,
 /area/space)
@@ -5173,12 +4807,6 @@
 	},
 /turf/closed/wall,
 /area/engine/gravity_generator)
-"WY" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/turf/closed/wall,
-/area/tcommsat/computer)
 "Xb" = (
 /obj/machinery/atmospherics/pipe/simple/green/visible{
 	dir = 10
@@ -5248,12 +4876,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/chief)
-"XL" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
 "Yf" = (
 /obj/structure/closet/firecloset,
 /turf/open/floor/plasteel,
@@ -23550,23 +23172,23 @@ uN
 uN
 uN
 uN
-zS
-zS
-zS
-zS
-zS
-zS
-zS
-zS
-zS
-zS
-zS
-tx
-tx
-xm
-bo
-le
-tx
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
 uN
 uN
 uN
@@ -23807,23 +23429,23 @@ uN
 uN
 uN
 uN
-zS
-nf
-ZN
-Kn
-ZN
-Tx
-ZN
-Kn
-ZN
-ZN
-zS
-SR
-qU
-NO
-mt
-pQ
-tx
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
 uN
 uN
 uN
@@ -24064,23 +23686,23 @@ uN
 uN
 uN
 uN
-zS
-VE
-Tx
-Tx
-Tx
-Tx
-Tx
-Tx
-Tx
-ZN
-yL
-DJ
-vz
-ga
-pB
-et
-tx
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
 uN
 uN
 uN
@@ -24321,23 +23943,23 @@ uN
 uN
 uN
 uN
-zS
-Mx
-Tx
-BE
-ZN
-Tx
-ZN
-qR
-Tx
-ZN
-JT
-xL
-vz
-mt
-mt
-PO
-tx
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
 uN
 uN
 uN
@@ -24578,23 +24200,23 @@ uN
 uN
 uN
 uN
-zS
-rB
-Tx
-ZN
-Tx
-Tx
-Tx
-ZN
-Tx
-ZN
-gG
-bv
-WY
-OA
-mt
-pQ
-tx
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
 uN
 uN
 uN
@@ -24835,23 +24457,23 @@ uN
 uN
 uN
 uN
-zS
-Tx
-Tx
-bo
-Tx
-Vt
-Tx
-Nc
-Tx
-Tx
-aD
-mt
-Lc
-mt
-mt
-OT
-tx
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
 uN
 uN
 uN
@@ -25092,23 +24714,23 @@ uN
 uN
 uN
 uN
-zS
-lU
-Tx
-ZN
-Tx
-rx
-Tx
-ZN
-Tx
-ZN
-gG
-bv
-WY
-br
-Di
-RJ
-tx
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
 uN
 uN
 uN
@@ -25349,23 +24971,23 @@ uN
 uN
 uN
 uN
-zS
-bG
-Tx
-bV
-ZN
-pR
-ZN
-oA
-Tx
-ZN
-JT
-FQ
-mj
-Rp
-mt
-mt
-tx
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
 uN
 uN
 uN
@@ -25606,23 +25228,23 @@ uN
 uN
 uN
 uN
-zS
-zV
-Tx
-Tx
-Tx
-EH
-Ql
-Ql
-Ql
-lJ
-vZ
-QZ
-mt
-mt
-mt
-mt
-tx
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
 uN
 uN
 uN
@@ -25863,23 +25485,23 @@ uN
 uN
 uN
 uN
-zS
-vq
-ZN
-XL
-ZN
-nd
-ZN
-XL
-ZN
-ZN
-zS
-Ml
-mt
-pH
-bv
-bv
-tx
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
 uN
 uN
 uN
@@ -26120,23 +25742,23 @@ uN
 uN
 uN
 uN
-zS
-zS
-zS
-zS
-zS
-zS
-zS
-zS
-zS
-zS
-zS
-tx
-tx
-tx
-tx
-tx
-tx
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
+uN
 uN
 uN
 uN
@@ -29167,31 +28789,31 @@ AD
 uN
 uN
 uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-xF
-xF
-xF
-xF
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 xF
 GB
 GB
@@ -29424,31 +29046,31 @@ AD
 uN
 uN
 uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 BD
@@ -29681,31 +29303,31 @@ AD
 uN
 uN
 uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -29938,31 +29560,31 @@ AD
 uN
 uN
 uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -30195,31 +29817,31 @@ AD
 Jh
 Wi
 wW
-xF
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -30452,31 +30074,31 @@ AD
 ny
 jC
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -30709,31 +30331,31 @@ AD
 ny
 jC
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -30966,31 +30588,31 @@ AD
 ny
 jC
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -31223,31 +30845,31 @@ AD
 ny
 jC
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -31480,31 +31102,31 @@ AD
 ny
 jC
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -31737,31 +31359,31 @@ AD
 ny
 jC
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-VL
-VL
-VL
-VL
-uN
-uN
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -31994,31 +31616,31 @@ AD
 ny
 jC
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-VL
-uN
-uN
-VL
-uN
-uN
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -32251,31 +31873,31 @@ AD
 ny
 jC
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-VL
-uN
-uN
-VL
-uN
-uN
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -32508,31 +32130,31 @@ AD
 ny
 jC
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-VL
-uN
-uN
-VL
-uN
-uN
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -32765,31 +32387,31 @@ AD
 ny
 jC
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-VL
-uN
-uN
-VL
-uN
-uN
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -33022,31 +32644,31 @@ AD
 ny
 jC
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-VL
-uN
-uN
-VL
-uN
-uN
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -33279,31 +32901,31 @@ AD
 ny
 jC
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-VL
-uN
-uN
-VL
-VL
-VL
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -33536,31 +33158,31 @@ AD
 ny
 jC
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -33793,31 +33415,31 @@ AD
 ny
 jC
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-VL
-VL
-VL
-VL
-VL
-VL
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -34050,31 +33672,31 @@ AD
 ny
 jC
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-VL
-uN
-uN
-VL
-uN
-uN
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -34307,31 +33929,31 @@ AD
 ny
 jC
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-VL
-uN
-uN
-VL
-uN
-uN
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -34564,31 +34186,31 @@ AD
 ny
 jC
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-VL
-uN
-uN
-VL
-uN
-uN
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -34821,31 +34443,31 @@ AD
 ny
 jC
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-VL
-uN
-uN
-VL
-uN
-uN
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -35078,31 +34700,31 @@ AD
 bO
 jC
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -35335,31 +34957,31 @@ AD
 fz
 Yo
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-VL
-VL
-VL
-VL
-VL
-VL
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -35592,31 +35214,31 @@ AD
 LJ
 FL
 qu
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-VL
-uN
-uN
-uN
-uN
-uN
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -35849,31 +35471,31 @@ AD
 ny
 jC
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-VL
-uN
-uN
-uN
-uN
-uN
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -36106,31 +35728,31 @@ AD
 ny
 jC
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-VL
-uN
-uN
-uN
-uN
-uN
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -36363,31 +35985,31 @@ AD
 ny
 jC
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-VL
-uN
-uN
-uN
-uN
-uN
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -36620,31 +36242,31 @@ AD
 ny
 jC
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -36877,31 +36499,31 @@ AD
 ny
 jC
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -37134,31 +36756,31 @@ AD
 ny
 jC
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -37391,31 +37013,31 @@ AD
 ny
 jC
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -37648,31 +37270,31 @@ AD
 ny
 jC
 To
-VL
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-uN
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 ny
 jC
 To
@@ -37905,31 +37527,31 @@ AD
 PU
 AB
 fL
-VL
-VL
-VL
-VL
-VL
-VL
-VL
-VL
-VL
-VL
-VL
-VL
-VL
-VL
-VL
-VL
-VL
-VL
-VL
-VL
-VL
-VL
-VL
-VL
-VL
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
+AD
 PU
 AB
 fL
@@ -38129,27 +37751,27 @@ vb
 vb
 vb
 vb
-FE
-vb
-vb
-vb
-vb
-FE
-vb
-vb
-vb
-FE
 vb
 vb
 vb
 vb
 vb
 vb
-FE
 vb
 vb
 vb
-FE
+vb
+vb
+vb
+vb
+vb
+vb
+vb
+vb
+vb
+vb
+vb
+vb
 vb
 vb
 vb
@@ -38386,27 +38008,27 @@ NB
 NB
 NB
 NB
-TR
 NB
 NB
 NB
 NB
-TR
-qs
-NB
-NB
-TR
 NB
 NB
 qs
 NB
 NB
 NB
-TR
+NB
+NB
+qs
 NB
 NB
 NB
-TR
+NB
+NB
+NB
+NB
+NB
 NB
 qs
 NB
@@ -38643,29 +38265,29 @@ Lr
 Lr
 Lr
 Lr
-kw
-kf
-Lr
-Lr
-kf
-kw
-CT
-Lr
-Lr
-kw
-kf
-Lr
-CT
-Lr
-Lr
-kf
-kw
 Lr
 Lr
 Lr
-kw
-kf
-CT
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
 Lr
 Lr
 Lr
@@ -39444,7 +39066,7 @@ AD
 AD
 AD
 AD
-bO
+ny
 jC
 To
 AD
@@ -39701,9 +39323,9 @@ AD
 AD
 AD
 AD
-vA
-FZ
-qu
+ny
+Nx
+To
 AD
 AD
 AD
@@ -39958,9 +39580,9 @@ AD
 AD
 AD
 AD
-LJ
-Hw
-qu
+ny
+pz
+To
 AD
 AD
 AD
@@ -40215,7 +39837,7 @@ AD
 AD
 AD
 AD
-bO
+ny
 jC
 To
 AD
@@ -40986,7 +40608,7 @@ AD
 AD
 AD
 AD
-uh
+bO
 Nx
 To
 AD
@@ -41243,8 +40865,8 @@ AD
 AD
 AD
 AD
-ny
-pz
+Vs
+gh
 To
 AD
 AD
@@ -41500,9 +41122,9 @@ AD
 AD
 AD
 AD
-bO
-jC
-To
+kw
+FL
+qu
 AD
 AD
 AD
@@ -42014,9 +41636,9 @@ AD
 AD
 AD
 AD
-LJ
-gh
-qu
+ny
+jC
+To
 AD
 AD
 AD
@@ -43299,7 +42921,7 @@ AD
 AD
 AD
 AD
-Vs
+ny
 Nx
 To
 AD
@@ -43784,33 +43406,33 @@ vb
 vb
 vb
 vb
-nB
+vb
 FE
-Cv
-Rv
 vb
 vb
 vb
 vb
 vb
 vb
-Cv
-vb
-vb
-nB
-Cv
-vb
-Rv
-vb
-vb
-Cv
-Rv
 vb
 vb
 vb
-Cv
 vb
-Rv
+vb
+vb
+vb
+vb
+vb
+vb
+vb
+vb
+vb
+vb
+vb
+vb
+vb
+vb
+vb
 vb
 mE
 dG
@@ -44041,10 +43663,9 @@ NB
 NB
 NB
 NB
-dp
+qs
 QQ
 NB
-wp
 NB
 NB
 NB
@@ -44054,20 +43675,21 @@ NB
 NB
 NB
 NB
-dp
+NB
+qs
 NB
 LM
-wp
-NB
-NB
-NB
-wp
 NB
 NB
 NB
 NB
 NB
-wp
+NB
+NB
+NB
+NB
+NB
+NB
 NB
 cS
 iW
@@ -44301,7 +43923,7 @@ kf
 Lr
 kw
 Lr
-SK
+Lr
 Lr
 Lr
 Lr
@@ -44314,17 +43936,17 @@ Lr
 Lr
 Lr
 CT
-SK
-Lr
-Lr
-Lr
-SK
 Lr
 Lr
 Lr
 Lr
 Lr
-SK
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
 Lr
 BX
 Yz

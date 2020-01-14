@@ -23,9 +23,7 @@
 /obj/structure/disposaloutlet{
 	dir = 4
 	},
-/obj/structure/disposalpipe/trunk{
-	dir = 2
-	},
+/obj/structure/disposalpipe/trunk,
 /turf/open/floor/plasteel,
 /area/quartermaster/sorting)
 "bS" = (
@@ -47,9 +45,7 @@
 /obj/machinery/disposal/deliveryChute{
 	dir = 8
 	},
-/obj/structure/disposalpipe/trunk{
-	dir = 2
-	},
+/obj/structure/disposalpipe/trunk,
 /turf/open/floor/plasteel,
 /area/quartermaster/sorting)
 "ee" = (

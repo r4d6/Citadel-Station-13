@@ -2275,8 +2275,6 @@
 /area/science/xenobiology)
 "If" = (
 /obj/machinery/portable_atmospherics/pump,
-/obj/machinery/portable_atmospherics/pump,
-/obj/machinery/portable_atmospherics/pump,
 /turf/open/floor/plasteel/white,
 /area/science/mixing)
 "Ij" = (
@@ -6188,7 +6186,7 @@ Lk
 BP
 yK
 Jh
-Fj
+If
 ju
 Ma
 LY
@@ -6438,7 +6436,7 @@ Fj
 WZ
 Fj
 Fj
-Fj
+If
 ju
 pV
 Hd
