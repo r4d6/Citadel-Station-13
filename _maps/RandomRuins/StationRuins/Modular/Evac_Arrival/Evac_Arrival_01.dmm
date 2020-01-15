@@ -1,111 +1,1289 @@
-"ax" = (/obj/effect/spawner/structure/window/reinforced,/obj/machinery/door/firedoor,/turf/open/floor/plating,/area/hallway/secondary/entry)
-"aJ" = (/obj/docking_port/stationary{dir = 2; dwidth = 1; height = 4; name = "escape pod loader"; roundstart_template = /datum/map_template/shuttle/escape_pod/default; width = 3},/turf/open/space/basic,/area/space)
-"bE" = (/obj/structure/closet/emcloset,/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"cD" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 9},/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"cZ" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"er" = (/obj/machinery/vending/cola/random,/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"ez" = (/obj/effect/spawner/structure/window/hollow/plasma/reinforced/directional{dir = 8},/obj/effect/spawner/structure/window/hollow/plasma/reinforced/directional{dir = 1},/turf/open/floor/grass,/area/hallway/secondary/exit/departure_lounge)
-"fG" = (/obj/structure/chair{dir = 8},/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"go" = (/obj/effect/spawner/structure/window/reinforced,/obj/machinery/door/firedoor,/turf/open/floor/plating,/area/hallway/secondary/exit/departure_lounge)
-"hk" = (/turf/closed/wall,/area/hallway/secondary/entry)
-"hD" = (/obj/structure/chair/comfy{dir = 8},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"jn" = (/obj/effect/spawner/structure/window/hollow/plasma/reinforced/directional,/obj/effect/spawner/structure/window/hollow/plasma/reinforced/directional{dir = 8},/turf/open/floor/grass,/area/hallway/secondary/exit/departure_lounge)
-"jJ" = (/obj/docking_port/stationary{dir = 2; dwidth = 3; height = 15; id = "arrivals_stationary"; name = "arrivals"; roundstart_template = /datum/map_template/shuttle/arrival/box; width = 7},/turf/open/space/basic,/area/space)
-"jZ" = (/obj/machinery/door/airlock/external{name = "Escape Airlock"},/obj/effect/mapping_helpers/airlock/cyclelink_helper,/obj/machinery/door/firedoor,/turf/open/floor/plating,/area/hallway/secondary/exit/departure_lounge)
-"kh" = (/obj/effect/spawner/structure/window/reinforced,/turf/open/floor/plating,/area/hallway/secondary/exit/departure_lounge)
-"kl" = (/obj/docking_port/stationary{dir = 2; dwidth = 12; height = 18; id = "emergency_home"; name = "BoxStation emergency evac bay"; width = 32},/turf/open/space/basic,/area/space)
-"kF" = (/obj/structure/chair/comfy{dir = 4},/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"lc" = (/turf/closed/wall/r_wall,/area/hallway/secondary/exit/departure_lounge)
-"lm" = (/turf/open/floor/plasteel,/area/hallway/secondary/entry)
-"lq" = (/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 8},/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"mg" = (/obj/structure/closet/emcloset,/turf/open/floor/plasteel,/area/hallway/secondary/entry)
-"mK" = (/obj/machinery/door/firedoor/heavy,/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"nx" = (/obj/effect/spawner/structure/window/hollow/plasma/reinforced/directional{dir = 1},/obj/effect/spawner/structure/window/hollow/plasma/reinforced/directional{dir = 4},/turf/open/floor/grass,/area/hallway/secondary/exit/departure_lounge)
-"nR" = (/turf/template_noop,/area/template_noop)
-"oe" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on{dir = 8},/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"om" = (/obj/docking_port/stationary/random{dir = 2; id = "pod_lavaland1"; name = "lavaland"},/turf/open/space/basic,/area/space)
-"ov" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on{dir = 1},/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"po" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 5},/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"pN" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/obj/machinery/door/firedoor/heavy,/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"qo" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/door/firedoor/heavy,/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"qr" = (/obj/structure/disposalpipe/segment,/turf/closed/wall,/area/hallway/secondary/exit/departure_lounge)
-"rh" = (/obj/machinery/door/airlock/command{name = "Emergency Escape"; req_access_txt = "20"},/obj/structure/plasticflaps/opaque,/turf/open/floor/engine,/area/hallway/secondary/exit/departure_lounge)
-"tj" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/door/firedoor/heavy,/turf/open/floor/plasteel,/area/hallway/secondary/entry)
-"uH" = (/obj/machinery/door/firedoor/heavy,/turf/open/floor/plasteel,/area/hallway/secondary/entry)
-"uT" = (/turf/open/space/basic,/area/space)
-"vF" = (/obj/machinery/vending/snack/random,/turf/open/floor/plasteel,/area/hallway/secondary/entry)
-"vU" = (/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"wD" = (/obj/machinery/door/airlock/external{name = "Security Escape Airlock"; req_access_txt = "2"},/obj/effect/mapping_helpers/airlock/cyclelink_helper{dir = 1},/turf/open/floor/plating,/area/hallway/secondary/exit/departure_lounge)
-"wJ" = (/obj/structure/chair/comfy{dir = 4},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"wO" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/hallway/secondary/entry)
-"xz" = (/turf/open/space/basic,/area/space/nearstation)
-"zc" = (/obj/machinery/door/airlock/external{name = "Security Escape Airlock"; req_access_txt = "2"},/obj/effect/mapping_helpers/airlock/cyclelink_helper,/obj/machinery/door/firedoor,/turf/open/floor/plating,/area/hallway/secondary/exit/departure_lounge)
-"zl" = (/obj/structure/table,/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"zU" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"AQ" = (/obj/machinery/vending/snack/random,/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"BA" = (/obj/machinery/atmospherics/components/unary/vent_pump/on{dir = 8},/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"Cp" = (/obj/structure/chair/comfy{dir = 4},/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 4},/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"Ee" = (/obj/machinery/door/airlock/security/glass{name = "Holding Area"; req_access_txt = "2"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"EG" = (/obj/effect/spawner/structure/window/hollow/plasma/reinforced/directional{dir = 4},/turf/open/floor/grass,/area/hallway/secondary/exit/departure_lounge)
-"Gi" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/open/floor/plasteel,/area/hallway/secondary/entry)
-"Gk" = (/obj/structure/table,/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"Hv" = (/obj/effect/spawner/structure/window/hollow/plasma/reinforced/directional,/turf/open/floor/grass,/area/hallway/secondary/exit/departure_lounge)
-"HK" = (/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{dir = 1},/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"HS" = (/obj/machinery/airalarm{pixel_y = 24},/obj/structure/disposalpipe/trunk{dir = 1},/obj/machinery/disposal/bin,/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"Ij" = (/obj/effect/spawner/structure/window/reinforced,/turf/open/floor/plating,/area/hallway/secondary/entry)
-"IJ" = (/turf/closed/wall/r_wall,/area/hallway/secondary/entry)
-"Jg" = (/obj/machinery/door/airlock/external{name = "Port Docking Bay 1"},/obj/effect/mapping_helpers/airlock/cyclelink_helper{dir = 8},/turf/open/floor/plating,/area/hallway/secondary/entry)
-"Lm" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/obj/machinery/door/firedoor/heavy,/turf/open/floor/plasteel,/area/hallway/secondary/entry)
-"LP" = (/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{dir = 8},/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"Mc" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"Mt" = (/obj/effect/mapping_helpers/airlock/cyclelink_helper{dir = 1},/obj/machinery/door/airlock/external{name = "Escape Pod One"},/turf/open/floor/plating,/area/hallway/secondary/entry)
-"MJ" = (/obj/effect/mapping_helpers/airlock/cyclelink_helper,/obj/machinery/door/airlock/external{name = "Escape Pod One"},/obj/machinery/door/firedoor,/turf/open/floor/plating,/area/hallway/secondary/entry)
-"MX" = (/obj/machinery/computer/arcade,/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"OJ" = (/obj/structure/chair/comfy{dir = 8},/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"PQ" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 6},/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"PW" = (/obj/machinery/quantumpad{map_pad_id = "Evac"; map_pad_link_id = "EvacBridge"},/turf/open/floor/engine,/area/hallway/secondary/exit/departure_lounge)
-"Qq" = (/obj/machinery/door/firedoor,/turf/open/floor/plating,/area/hallway/secondary/entry)
-"QT" = (/obj/structure/table,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"SW" = (/obj/structure/lattice,/turf/open/space/basic,/area/space/nearstation)
-"TS" = (/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 8},/turf/open/floor/plasteel,/area/hallway/secondary/entry)
-"Vb" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
-"WD" = (/obj/structure/closet/emcloset,/turf/open/floor/plating,/area/hallway/secondary/entry)
-"WF" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/turf/closed/wall,/area/hallway/secondary/exit/departure_lounge)
-"WH" = (/turf/open/floor/plating,/area/hallway/secondary/entry)
-"Xr" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on{dir = 1},/turf/open/floor/plasteel,/area/hallway/secondary/entry)
-"Yc" = (/obj/effect/spawner/structure/window/hollow/plasma/reinforced/directional,/obj/effect/spawner/structure/window/hollow/plasma/reinforced/directional{dir = 4},/turf/open/floor/grass,/area/hallway/secondary/exit/departure_lounge)
-"Yn" = (/turf/open/floor/plating,/area/hallway/secondary/exit/departure_lounge)
-"Yq" = (/turf/closed/wall,/area/hallway/secondary/exit/departure_lounge)
-"Yv" = (/obj/effect/spawner/structure/window/hollow/plasma/reinforced/directional{dir = 8},/turf/open/floor/grass,/area/hallway/secondary/exit/departure_lounge)
-"Yy" = (/mob/living/simple_animal/pet/redpanda{desc = "This is a normal Ailurus fulgens, which, and all of NT researchers can agree on this, never vore."; flavor_text = "This is a normal Ailurus fulgens, which, and all of NT researchers can agree on this, never vore."; health = 2000; name = "Chase the Red panda"},/turf/open/floor/grass,/area/hallway/secondary/exit/departure_lounge)
-"YM" = (/obj/machinery/atmospherics/components/unary/vent_pump/on{dir = 8},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/open/floor/plasteel,/area/hallway/secondary/entry)
-"YO" = (/obj/machinery/atmospherics/components/unary/vent_pump/on{dir = 1},/turf/open/floor/plasteel,/area/hallway/secondary/entry)
-"Zm" = (/obj/machinery/door/airlock/external{name = "Port Docking Bay 1"},/obj/effect/mapping_helpers/airlock/cyclelink_helper{dir = 4},/turf/open/floor/plating,/area/hallway/secondary/entry)
-"ZG" = (/obj/effect/spawner/structure/window/hollow/plasma/reinforced/directional{dir = 1},/turf/open/floor/grass,/area/hallway/secondary/exit/departure_lounge)
-"ZI" = (/obj/machinery/door/airlock/external{name = "Escape Airlock"},/obj/effect/mapping_helpers/airlock/cyclelink_helper{dir = 1},/turf/open/floor/plating,/area/hallway/secondary/exit/departure_lounge)
-"ZO" = (/obj/item/beacon,/turf/open/floor/plasteel,/area/hallway/secondary/entry)
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ax" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
+"aJ" = (
+/obj/docking_port/stationary{
+	dir = 2;
+	dwidth = 1;
+	height = 4;
+	name = "escape pod loader";
+	roundstart_template = /datum/map_template/shuttle/escape_pod/default;
+	width = 3
+	},
+/turf/open/space/basic,
+/area/space)
+"bE" = (
+/obj/structure/closet/emcloset,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"cD" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
+"cZ" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"er" = (
+/obj/machinery/vending/cola/random,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"ez" = (
+/obj/effect/spawner/structure/window/hollow/plasma/reinforced/directional{
+	dir = 8
+	},
+/obj/effect/spawner/structure/window/hollow/plasma/reinforced/directional{
+	dir = 1
+	},
+/turf/open/floor/grass,
+/area/hallway/secondary/exit/departure_lounge)
+"fG" = (
+/obj/structure/chair{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"go" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/turf/open/floor/plating,
+/area/hallway/secondary/exit/departure_lounge)
+"hk" = (
+/turf/closed/wall,
+/area/hallway/secondary/entry)
+"hD" = (
+/obj/structure/chair/comfy{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"jn" = (
+/obj/effect/spawner/structure/window/hollow/plasma/reinforced/directional,
+/obj/effect/spawner/structure/window/hollow/plasma/reinforced/directional{
+	dir = 8
+	},
+/turf/open/floor/grass,
+/area/hallway/secondary/exit/departure_lounge)
+"jJ" = (
+/obj/docking_port/stationary{
+	dir = 2;
+	dwidth = 3;
+	height = 15;
+	id = "arrivals_stationary";
+	name = "arrivals";
+	roundstart_template = /datum/map_template/shuttle/arrival/box;
+	width = 7
+	},
+/turf/open/space/basic,
+/area/space)
+"jZ" = (
+/obj/machinery/door/airlock/external{
+	name = "Escape Airlock"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/machinery/door/firedoor,
+/turf/open/floor/plating,
+/area/hallway/secondary/exit/departure_lounge)
+"kh" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/hallway/secondary/exit/departure_lounge)
+"kl" = (
+/obj/docking_port/stationary{
+	dir = 2;
+	dwidth = 12;
+	height = 18;
+	id = "emergency_home";
+	name = "BoxStation emergency evac bay";
+	width = 32
+	},
+/turf/open/space/basic,
+/area/space)
+"kF" = (
+/obj/structure/chair/comfy{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"lc" = (
+/turf/closed/wall/r_wall,
+/area/hallway/secondary/exit/departure_lounge)
+"lm" = (
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
+"lq" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
+	dir = 5
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"mg" = (
+/obj/structure/closet/emcloset,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
+"mK" = (
+/obj/machinery/door/firedoor/heavy,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"nx" = (
+/obj/effect/spawner/structure/window/hollow/plasma/reinforced/directional{
+	dir = 1
+	},
+/obj/effect/spawner/structure/window/hollow/plasma/reinforced/directional{
+	dir = 4
+	},
+/turf/open/floor/grass,
+/area/hallway/secondary/exit/departure_lounge)
+"nR" = (
+/turf/template_noop,
+/area/template_noop)
+"oe" = (
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer3{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"om" = (
+/obj/docking_port/stationary/random{
+	dir = 2;
+	id = "pod_lavaland1";
+	name = "lavaland"
+	},
+/turf/open/space/basic,
+/area/space)
+"ov" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"po" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"pN" = (
+/obj/machinery/door/firedoor/heavy,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"qo" = (
+/obj/machinery/door/firedoor/heavy,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"qr" = (
+/obj/structure/disposalpipe/segment,
+/turf/closed/wall,
+/area/hallway/secondary/exit/departure_lounge)
+"rh" = (
+/obj/machinery/door/airlock/command{
+	name = "Emergency Escape";
+	req_access_txt = "20"
+	},
+/obj/structure/plasticflaps/opaque,
+/turf/open/floor/engine,
+/area/hallway/secondary/exit/departure_lounge)
+"tj" = (
+/obj/machinery/door/firedoor/heavy,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
+"uH" = (
+/obj/machinery/door/firedoor/heavy,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
+"uT" = (
+/turf/open/space/basic,
+/area/space)
+"vF" = (
+/obj/machinery/vending/snack/random,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
+"vU" = (
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"wD" = (
+/obj/machinery/door/airlock/external{
+	name = "Security Escape Airlock";
+	req_access_txt = "2"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/hallway/secondary/exit/departure_lounge)
+"wJ" = (
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer3{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"wO" = (
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer3{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
+"xz" = (
+/turf/open/space/basic,
+/area/space/nearstation)
+"zc" = (
+/obj/machinery/door/airlock/external{
+	name = "Security Escape Airlock";
+	req_access_txt = "2"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/machinery/door/firedoor,
+/turf/open/floor/plating,
+/area/hallway/secondary/exit/departure_lounge)
+"zl" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
+	dir = 10
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"zU" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"AQ" = (
+/obj/machinery/vending/snack/random,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"BA" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 5
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
+"Cp" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
+"Ee" = (
+/obj/machinery/door/airlock/security/glass{
+	name = "Holding Area";
+	req_access_txt = "2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"EG" = (
+/obj/effect/spawner/structure/window/hollow/plasma/reinforced/directional{
+	dir = 4
+	},
+/turf/open/floor/grass,
+/area/hallway/secondary/exit/departure_lounge)
+"Gi" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer3{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
+"Gk" = (
+/obj/structure/table,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"Hv" = (
+/obj/effect/spawner/structure/window/hollow/plasma/reinforced/directional,
+/turf/open/floor/grass,
+/area/hallway/secondary/exit/departure_lounge)
+"HK" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
+	dir = 9
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"HS" = (
+/obj/machinery/airalarm{
+	pixel_y = 24
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
+/obj/machinery/disposal/bin,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"Ij" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
+"IJ" = (
+/turf/closed/wall/r_wall,
+/area/hallway/secondary/entry)
+"Jg" = (
+/obj/machinery/door/airlock/external{
+	name = "Port Docking Bay 1"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
+"LP" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"Mt" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
+/obj/machinery/door/airlock/external{
+	name = "Escape Pod One"
+	},
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
+"MJ" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/machinery/door/airlock/external{
+	name = "Escape Pod One"
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
+"MX" = (
+/obj/machinery/computer/arcade,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"OJ" = (
+/obj/structure/chair/comfy{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"PQ" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer3{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"PW" = (
+/obj/machinery/quantumpad{
+	map_pad_id = "Evac";
+	map_pad_link_id = "EvacBridge"
+	},
+/turf/open/floor/engine,
+/area/hallway/secondary/exit/departure_lounge)
+"Qq" = (
+/obj/machinery/door/firedoor,
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
+"SW" = (
+/obj/structure/lattice,
+/turf/open/space/basic,
+/area/space/nearstation)
+"TS" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
+"WD" = (
+/obj/structure/closet/emcloset,
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
+"WF" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
+/turf/closed/wall,
+/area/hallway/secondary/exit/departure_lounge)
+"WH" = (
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
+"Xr" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer3{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
+"Yc" = (
+/obj/effect/spawner/structure/window/hollow/plasma/reinforced/directional,
+/obj/effect/spawner/structure/window/hollow/plasma/reinforced/directional{
+	dir = 4
+	},
+/turf/open/floor/grass,
+/area/hallway/secondary/exit/departure_lounge)
+"Yn" = (
+/turf/open/floor/plating,
+/area/hallway/secondary/exit/departure_lounge)
+"Yq" = (
+/turf/closed/wall,
+/area/hallway/secondary/exit/departure_lounge)
+"Yv" = (
+/obj/effect/spawner/structure/window/hollow/plasma/reinforced/directional{
+	dir = 8
+	},
+/turf/open/floor/grass,
+/area/hallway/secondary/exit/departure_lounge)
+"Yy" = (
+/mob/living/simple_animal/pet/redpanda{
+	desc = "This is a normal Ailurus fulgens, which, and all of NT researchers can agree on this, never vore.";
+	flavor_text = "This is a normal Ailurus fulgens, which, and all of NT researchers can agree on this, never vore.";
+	health = 2000;
+	name = "Chase the Red panda"
+	},
+/turf/open/floor/grass,
+/area/hallway/secondary/exit/departure_lounge)
+"YO" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
+	dir = 5
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
+"Zm" = (
+/obj/machinery/door/airlock/external{
+	name = "Port Docking Bay 1"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
+"ZG" = (
+/obj/effect/spawner/structure/window/hollow/plasma/reinforced/directional{
+	dir = 1
+	},
+/turf/open/floor/grass,
+/area/hallway/secondary/exit/departure_lounge)
+"ZI" = (
+/obj/machinery/door/airlock/external{
+	name = "Escape Airlock"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/hallway/secondary/exit/departure_lounge)
+"ZO" = (
+/obj/item/beacon,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
 
 (1,1,1) = {"
-nRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRlclclc
-nRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRnRlcPWlc
-IJIJIJIJaxaxaxaxaxIJIJIJuHtjLmIJqomKpNYqYqYqYqYqYqqrYqYqYqYqlcrhlc
-lmaxxzuTuTuTjJuTuTuTxzaxlmwOGiIJVbvUcZvUAQerAQerAQHSbEbEbEMXMXvUlc
-IjaxIjuTuTuTuTuTuTuTIjaxIjwOGiIJVbvUcZvUvUvUvUvUvUvUvUvUvUvUvUvUlc
-ZmQqJguTuTuTuTuTuTuTZmQqJgwOGiIJVbvULPzUzUzUzUHKzUzUzUHKoevUvUvUlc
-IjaxIjuTuTuTuTuTuTuTIjaxIjTSYMIJlqBALPoevUPQBALPoePQBAcZezZGnxvUlc
-vFaxxzuTuTuTuTuTuTuTxzaxmgwOGiIJVbvUhDYqkFlqMcOJWFCpvUcZYvYyEGvUlc
-lmaxxzuTuTuTuTuTuTuTxzaxmgwOGiIJVbvUQTYqGkVbvUQTYqzlvUcZjnHvYcvUlc
-mgaxxzuTuTuTuTuTuTuTxzaxZOwOGiIJVbvUhDYqkFVbvUhDYqwJvUcZvUvUvUvUlc
-mgaxxzuTuTuTuTuTuTuTxzaxvFwOGiIJVbvUhDYqkFVbvUhDYqwJvUcZkhkhkhkhlc
-IjaxIjuTuTuTuTuTuTuTIjaxIjwOGiIJVbvUQTYqGkVbvUQTYqzlvUcZkhvUvUfGlc
-ZmQqJguTuTuTuTuTuTuTZmQqJgYOXrIJVbvUhDYqkFVbvUhDYqwJvUcZEevUvUfGlc
-IjaxIjuTuTuTuTuTuTuTIjaxIjlmlmIJlqBAovvUvUlqBAovvUpoBAovkhvUvUfGlc
-hkxzxzuTuTuTuTuTuTuTxzIJhkMJhkIJpoMcMcMcMccDvUvUvUvUvUvUkhvUvUfGlc
-hkxzxzuTuTuTuTuTuTuTxzIJWDWHWHIJgogogojZgojZgogogogogojZgozcgogolc
-hkxzxzuTuTuTuTuTuTuTxzIJhkMthkIJxzxzkhYnkhYnkhxzSWxzkhYnkhYnkhxzxz
-hkxzxzuTuTuTuTuTuTuTxzIJuTaJuTIJxzxzkhYnkhYnkhSWSWSWkhYnkhYnkhxzxz
-hkSWSWSWSWSWSWSWSWSWSWIJuTuTuTIJxzxzkhYnkhYnkhSWxzSWkhYnkhYnkhxzxz
-hkxzxzxzxzxzxzxzxzxzxzIJuTuTuTIJxzxzkhYnkhYnkhSWSWSWkhYnkhYnkhxzxz
-hkuTuTuTuTuTuTuTuTuTuTxzuTuTuTxzxzxzkhZIkhZIkhxzSWxzkhZIkhwDkhxzxz
-hkuTuTuTuTuTuTuTuTuTuTuTuTomuTuTuTuTuTuTuTuTuTuTuTuTuTkluTuTuTuTuT
+nR
+nR
+IJ
+lm
+Ij
+Zm
+Ij
+vF
+lm
+mg
+mg
+Ij
+Zm
+Ij
+hk
+hk
+hk
+hk
+hk
+hk
+hk
+hk
+"}
+(2,1,1) = {"
+nR
+nR
+IJ
+ax
+ax
+Qq
+ax
+ax
+ax
+ax
+ax
+ax
+Qq
+ax
+xz
+xz
+xz
+xz
+SW
+xz
+uT
+uT
+"}
+(3,1,1) = {"
+nR
+nR
+IJ
+xz
+Ij
+Jg
+Ij
+xz
+xz
+xz
+xz
+Ij
+Jg
+Ij
+xz
+xz
+xz
+xz
+SW
+xz
+uT
+uT
+"}
+(4,1,1) = {"
+nR
+nR
+IJ
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+SW
+xz
+uT
+uT
+"}
+(5,1,1) = {"
+nR
+nR
+ax
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+SW
+xz
+uT
+uT
+"}
+(6,1,1) = {"
+nR
+nR
+ax
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+SW
+xz
+uT
+uT
+"}
+(7,1,1) = {"
+nR
+nR
+ax
+jJ
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+SW
+xz
+uT
+uT
+"}
+(8,1,1) = {"
+nR
+nR
+ax
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+SW
+xz
+uT
+uT
+"}
+(9,1,1) = {"
+nR
+nR
+ax
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+SW
+xz
+uT
+uT
+"}
+(10,1,1) = {"
+nR
+nR
+IJ
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+uT
+SW
+xz
+uT
+uT
+"}
+(11,1,1) = {"
+nR
+nR
+IJ
+xz
+Ij
+Zm
+Ij
+xz
+xz
+xz
+xz
+Ij
+Zm
+Ij
+xz
+xz
+xz
+xz
+SW
+xz
+uT
+uT
+"}
+(12,1,1) = {"
+nR
+nR
+IJ
+ax
+ax
+Qq
+ax
+ax
+ax
+ax
+ax
+ax
+Qq
+ax
+IJ
+IJ
+IJ
+IJ
+IJ
+IJ
+xz
+uT
+"}
+(13,1,1) = {"
+nR
+nR
+uH
+cD
+Ij
+Jg
+Ij
+mg
+mg
+ZO
+vF
+Ij
+Jg
+Ij
+hk
+WD
+hk
+uT
+uT
+uT
+uT
+uT
+"}
+(14,1,1) = {"
+nR
+nR
+tj
+wO
+TS
+TS
+TS
+TS
+TS
+TS
+TS
+BA
+YO
+lm
+MJ
+WH
+Mt
+aJ
+uT
+uT
+uT
+om
+"}
+(15,1,1) = {"
+nR
+nR
+uH
+Xr
+lm
+lm
+lm
+lm
+lm
+lm
+lm
+Cp
+Xr
+lm
+hk
+WH
+hk
+uT
+uT
+uT
+uT
+uT
+"}
+(16,1,1) = {"
+nR
+nR
+IJ
+IJ
+IJ
+IJ
+IJ
+IJ
+IJ
+IJ
+IJ
+IJ
+IJ
+IJ
+IJ
+IJ
+IJ
+IJ
+IJ
+IJ
+xz
+uT
+"}
+(17,1,1) = {"
+nR
+nR
+qo
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+go
+xz
+xz
+xz
+xz
+xz
+uT
+"}
+(18,1,1) = {"
+nR
+nR
+mK
+zU
+lq
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+go
+xz
+xz
+xz
+xz
+xz
+uT
+"}
+(19,1,1) = {"
+nR
+nR
+qo
+vU
+cZ
+vU
+LP
+OJ
+Gk
+OJ
+OJ
+Gk
+OJ
+ov
+vU
+go
+kh
+kh
+kh
+kh
+kh
+uT
+"}
+(20,1,1) = {"
+nR
+nR
+Yq
+vU
+wJ
+zU
+oe
+WF
+WF
+WF
+WF
+WF
+WF
+HK
+vU
+jZ
+Yn
+Yn
+Yn
+Yn
+ZI
+uT
+"}
+(21,1,1) = {"
+nR
+nR
+Yq
+AQ
+cZ
+vU
+PQ
+kF
+Gk
+kF
+kF
+Gk
+kF
+po
+vU
+go
+kh
+kh
+kh
+kh
+kh
+uT
+"}
+(22,1,1) = {"
+nR
+nR
+Yq
+er
+cZ
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+jZ
+Yn
+Yn
+Yn
+Yn
+ZI
+uT
+"}
+(23,1,1) = {"
+nR
+nR
+Yq
+AQ
+cZ
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+go
+kh
+kh
+kh
+kh
+kh
+uT
+"}
+(24,1,1) = {"
+nR
+nR
+Yq
+er
+cZ
+vU
+LP
+OJ
+Gk
+OJ
+OJ
+Gk
+OJ
+ov
+vU
+go
+xz
+SW
+SW
+SW
+xz
+uT
+"}
+(25,1,1) = {"
+nR
+nR
+Yq
+AQ
+zl
+zU
+oe
+WF
+WF
+WF
+WF
+WF
+WF
+HK
+vU
+go
+SW
+SW
+xz
+SW
+SW
+uT
+"}
+(26,1,1) = {"
+nR
+nR
+qr
+HS
+vU
+vU
+PQ
+kF
+Gk
+kF
+kF
+Gk
+kF
+po
+vU
+go
+xz
+SW
+SW
+SW
+xz
+uT
+"}
+(27,1,1) = {"
+nR
+nR
+Yq
+bE
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+go
+kh
+kh
+kh
+kh
+kh
+uT
+"}
+(28,1,1) = {"
+nR
+nR
+Yq
+bE
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+jZ
+Yn
+Yn
+Yn
+Yn
+ZI
+kl
+"}
+(29,1,1) = {"
+nR
+nR
+Yq
+bE
+vU
+vU
+ez
+Yv
+jn
+vU
+kh
+kh
+Ee
+kh
+kh
+go
+kh
+kh
+kh
+kh
+kh
+uT
+"}
+(30,1,1) = {"
+nR
+nR
+Yq
+MX
+vU
+vU
+ZG
+Yy
+Hv
+vU
+kh
+vU
+vU
+vU
+vU
+zc
+Yn
+Yn
+Yn
+Yn
+wD
+uT
+"}
+(31,1,1) = {"
+lc
+lc
+lc
+MX
+vU
+vU
+nx
+EG
+Yc
+vU
+kh
+vU
+vU
+vU
+vU
+go
+kh
+kh
+kh
+kh
+kh
+uT
+"}
+(32,1,1) = {"
+lc
+PW
+rh
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+kh
+fG
+fG
+fG
+fG
+go
+xz
+xz
+xz
+xz
+xz
+uT
+"}
+(33,1,1) = {"
+lc
+lc
+lc
+lc
+lc
+lc
+lc
+lc
+lc
+lc
+lc
+lc
+lc
+lc
+lc
+lc
+xz
+xz
+xz
+xz
+xz
+uT
 "}
