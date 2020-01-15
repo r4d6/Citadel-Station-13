@@ -9,8 +9,8 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/ai)
 "bG" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
-	dir = 8
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1{
+	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/ai)
@@ -28,11 +28,11 @@
 /area/ai_monitored/turret_protected/aisat_interior)
 "cp" = (
 /obj/machinery/holopad,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
-	dir = 6
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1{
+	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
-	dir = 10
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer3{
+	dir = 4
 	},
 /turf/open/floor/circuit,
 /area/ai_monitored/turret_protected/ai)
@@ -60,6 +60,13 @@
 "ei" = (
 /turf/closed/wall/r_wall,
 /area/hallway/primary/central)
+"hB" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer3,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 9
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
 "hK" = (
 /obj/machinery/atmospherics/components/unary/tank/air,
 /turf/open/floor/plasteel/dark,
@@ -78,11 +85,14 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat_interior)
 "is" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer3{
-	dir = 4
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
+	dir = 6
 	},
-/turf/open/floor/plasteel/dark,
-/area/ai_monitored/turret_protected/aisat_interior)
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 10
+	},
+/turf/open/floor/circuit,
+/area/ai_monitored/turret_protected/ai)
 "iH" = (
 /obj/machinery/atmospherics/components/binary/pump/on,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1{
@@ -91,14 +101,11 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat_interior)
 "iR" = (
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer3{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1{
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
-/area/ai_monitored/turret_protected/aisat_interior)
+/area/ai_monitored/turret_protected/ai)
 "jq" = (
 /obj/machinery/door/airlock/hatch{
 	name = "MiniSat Service Bay";
@@ -118,6 +125,8 @@
 	name = "AI Core Door";
 	req_access_txt = "16"
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
 /turf/open/floor/circuit,
 /area/ai_monitored/turret_protected/ai)
 "kt" = (
@@ -152,6 +161,15 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat_interior)
+"nb" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer3{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
 "np" = (
 /obj/machinery/porta_turret/ai{
 	dir = 4
@@ -165,11 +183,18 @@
 /turf/open/floor/circuit,
 /area/ai_monitored/turret_protected/ai)
 "os" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1{
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer3{
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
-/area/ai_monitored/turret_protected/aisat_interior)
+/area/ai_monitored/turret_protected/ai)
+"ow" = (
+/obj/machinery/atmospherics/components/binary/pump/on/layer3{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/binary/pump/on/layer1,
+/turf/open/floor/plasteel/dark,
+/area/aisat)
 "oV" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -367,19 +392,17 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat_interior)
-"Cg" = (
-/obj/item/radio/intercom{
-	broadcasting = 1;
-	frequency = 1447;
-	listening = 0;
-	name = "AI Intercom";
-	pixel_y = -28
-	},
+"Bd" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer3{
-	dir = 4
+	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat_interior)
+"Cg" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
+/turf/open/floor/circuit,
+/area/ai_monitored/turret_protected/ai)
 "CC" = (
 /obj/machinery/computer/teleporter,
 /turf/open/floor/plating,
@@ -426,14 +449,10 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/ai)
 "IF" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
-	dir = 6
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
-	dir = 10
-	},
-/turf/open/floor/plasteel/dark,
-/area/ai_monitored/turret_protected/aisat_interior)
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
+/turf/closed/wall/r_wall,
+/area/ai_monitored/turret_protected/ai)
 "Jc" = (
 /obj/item/radio/intercom{
 	broadcasting = 1;
@@ -441,6 +460,15 @@
 	listening = 0;
 	name = "AI Intercom";
 	pixel_y = -28
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"Kj" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
+	dir = 5
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat_interior)
@@ -461,11 +489,8 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "MB" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
-	dir = 5
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
-	dir = 5
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer3{
+	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat_interior)
@@ -497,10 +522,10 @@
 /area/ai_monitored/turret_protected/aisat_interior)
 "Pz" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer3{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1{
+	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat_interior)
@@ -515,9 +540,8 @@
 /turf/open/space/basic,
 /area/aisat)
 "Rk" = (
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer3,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
-	dir = 9
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1{
+	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat_interior)
@@ -578,8 +602,15 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/ai)
 "WU" = (
+/obj/item/radio/intercom{
+	broadcasting = 1;
+	frequency = 1447;
+	listening = 0;
+	name = "AI Intercom";
+	pixel_y = -28
+	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer3{
-	dir = 1
+	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat_interior)
@@ -604,12 +635,14 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat_interior)
 "Yk" = (
-/obj/machinery/atmospherics/components/binary/pump/on/layer3{
-	dir = 1
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 6
 	},
-/obj/machinery/atmospherics/components/binary/pump/on/layer1,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
+	dir = 10
+	},
 /turf/open/floor/plasteel/dark,
-/area/aisat)
+/area/ai_monitored/turret_protected/aisat_interior)
 "Yv" = (
 /obj/effect/landmark/start/ai,
 /obj/item/radio/intercom{
@@ -625,6 +658,8 @@
 	pixel_y = -42
 	},
 /obj/machinery/light/floor,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
 /turf/open/floor/circuit,
 /area/ai_monitored/turret_protected/ai)
 "YJ" = (
@@ -788,7 +823,7 @@ UJ
 xq
 Uj
 zH
-MB
+Kj
 aL
 UJ
 UJ
@@ -830,7 +865,7 @@ vh
 vh
 vh
 bC
-zd
+bG
 np
 KC
 KC
@@ -857,16 +892,16 @@ vh
 vh
 vh
 zd
-zd
+hQ
 KC
 RL
 nR
 FO
 KC
-bG
+iR
 uQ
 OW
-is
+MB
 Jc
 UJ
 bW
@@ -884,16 +919,16 @@ vh
 vh
 vh
 sT
-KC
-KC
+is
+Cg
 jD
 Yv
-vh
-KC
+IF
+Cg
 cp
 Gm
 AP
-iR
+Pz
 FX
 mr
 dK
@@ -901,7 +936,7 @@ xS
 xS
 QI
 RW
-Yk
+ow
 uU
 "}
 (11,1,1) = {"
@@ -911,7 +946,7 @@ vh
 vh
 vh
 zd
-zd
+iR
 KC
 kY
 Oj
@@ -920,7 +955,7 @@ KC
 hQ
 uQ
 OW
-os
+Rk
 ik
 UJ
 AE
@@ -938,7 +973,7 @@ vh
 vh
 vh
 zd
-zd
+os
 np
 KC
 KC
@@ -950,8 +985,8 @@ UJ
 UJ
 UJ
 UJ
-Pz
-WU
+nb
+Bd
 UJ
 UJ
 UJ
@@ -975,7 +1010,7 @@ wW
 uQ
 UJ
 sl
-Cg
+WU
 UJ
 AE
 aL
@@ -1002,9 +1037,9 @@ kt
 Oe
 UJ
 aL
-IF
+Yk
 jq
-Rk
+hB
 aL
 UJ
 UJ
