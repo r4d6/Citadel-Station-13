@@ -1,4 +1,3 @@
-
 /datum/map_template/ruin/station
 	prefix = "_maps/RandomRuins/StationRuins/"
 	cost = 0
@@ -36,12 +35,25 @@
 	suffix = "Box/Engine/engine_tesla.dmm"
 	name = "Box Tesla"
 
-// Lavaland
-	// Mining Base
-/datum/map_template/ruin/station/lavaland/mining_base
-	id = "mining_public_01"
-	suffix = "Lavaland/Mining_Station/Mining_Station_Public_01.dmm"
-	name = "Public Mining Base"
+/datum/map_template/ruin/station/box/engine/teg
+	id = "engine_teg"
+	suffix = "Box/Engine/engine_tesla.dmm"
+	name = "Box TEG"
+
+/datum/map_template/ruin/station/box/engine/empty
+	id = "engine_empty"
+	suffix = "Box/Engine/engine_tesla.dmm"
+	name = "Box Empty"
+
+/datum/map_template/ruin/station/box/engine/am
+	id = "engine_am"
+	suffix = "Box/Engine/engine_tesla.dmm"
+	name = "Box Antimatter"
+
+/datum/map_template/ruin/station/box/engine/budget
+	id = "engine_budget"
+	suffix = "Box/Engine/engine_tesla.dmm"
+	name = "Box P.A.C.M.A.N"
 
 // Modular Station
 	// AI Sat
@@ -112,3 +124,10 @@
 	id = "t_comm_01"
 	suffix = "Modular/Engineering/T_Comm/T_Comm_01.dmm"
 	name = "T_Comm 01"
+
+// Lavaland
+	// Mining Base
+/datum/map_template/ruin/station/lavaland/mining_base
+	id = "mining_public_01"
+	suffix = "Lavaland/Mining_Station/Mining_Station_Public_01.dmm"
+	name = "Public Mining Base"
