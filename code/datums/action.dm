@@ -301,10 +301,7 @@
 /datum/action/item_action/synthswitch/Trigger()
 	if(istype(target, /obj/item/instrument/piano_synth))
 		var/obj/item/instrument/piano_synth/synth = target
-		var/chosen = input("Choose the type of instrument you want to use", "Instrument Selection", "piano") as null|anything in synth.insTypes
-		if(!synth.insTypes[chosen])
-			return
-		return synth.changeInstrument(chosen)
+		return synth.selectInstrument()
 	return ..()
 
 /datum/action/item_action/vortex_recall
@@ -820,3 +817,11 @@
 	target.layer = old_layer
 	target.plane = old_plane
 	current_button.appearance_cache = target.appearance
+
+/proc/get_action_of_type(mob/M, var/action_type)
+	if(!M.actions || !ispath(action_type, /datum/action))
+		return
+	for(var/datum/action/A in M.actions)
+		if(istype(A, action_type))
+			return A
+	return 

@@ -234,6 +234,7 @@
 
 /datum/config_entry/number/movedelay	//Used for modifying movement speed for mobs.
 	abstract_type = /datum/config_entry/number/movedelay
+	integer = FALSE
 
 /datum/config_entry/number/movedelay/ValidateAndSet()
 	. = ..()
@@ -402,10 +403,6 @@
 	value_mode = VALUE_MODE_NUM
 	lowercase = FALSE
 	splitter = ","
-
-/datum/config_entry/number/auto_transfer_delay
-	config_entry_value = 72000
-	min_val = 0
 
 /datum/config_entry/flag/pai_custom_holoforms
 
