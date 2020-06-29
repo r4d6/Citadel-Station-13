@@ -17,28 +17,26 @@
 	var/points = 0 //How many points this ore gets you from the ore redemption machine
 	var/refined_type = null //What this ore defaults to being refined into
 	novariants = TRUE // Ore stacks handle their icon updates themselves to keep the illusion that there's more going
-	mats_per_stack = MINERAL_MATERIAL_AMOUNT
 	var/list/stack_overlays
 
-/obj/item/stack/ore/update_icon()
+/obj/item/stack/ore/update_overlays()
+	. = ..()
 	var/difference = min(ORESTACK_OVERLAYS_MAX, amount) - (LAZYLEN(stack_overlays)+1)
 	if(difference == 0)
 		return
 	else if(difference < 0 && LAZYLEN(stack_overlays))			//amount < stack_overlays, remove excess.
-		cut_overlays()
 		if (LAZYLEN(stack_overlays)-difference <= 0)
-			stack_overlays = null;
+			stack_overlays = null
 		else
 			stack_overlays.len += difference
 	else if(difference > 0)			//amount > stack_overlays, add some.
-		cut_overlays()
 		for(var/i in 1 to difference)
 			var/mutable_appearance/newore = mutable_appearance(icon, icon_state)
 			newore.pixel_x = rand(-8,8)
 			newore.pixel_y = rand(-8,8)
 			LAZYADD(stack_overlays, newore)
 	if (stack_overlays)
-		add_overlay(stack_overlays)
+		. += stack_overlays
 
 /obj/item/stack/ore/welder_act(mob/living/user, obj/item/I)
 	if(!refined_type)
@@ -71,7 +69,6 @@
 	singular_name = "uranium ore chunk"
 	points = 30
 	custom_materials = list(/datum/material/uranium=MINERAL_MATERIAL_AMOUNT)
-	material_flags = MATERIAL_NO_EFFECTS
 	refined_type = /obj/item/stack/sheet/mineral/uranium
 
 /obj/item/stack/ore/iron
@@ -104,7 +101,22 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 /obj/item/stack/ore/glass/throw_impact(atom/hit_atom, datum/thrownthing/throwingdatum)
 	if(..() || !ishuman(hit_atom))
 		return
-	var/mob/living/carbon/human/C = hit_atom
+	var/mob/living/carbon/human/poorsod = hit_atom
+	eyesand(poorsod)
+
+/obj/item/stack/ore/glass/attack(mob/living/M, mob/living/user)
+	if(!ishuman(M))
+		return ..()
+	if(user.zone_selected != BODY_ZONE_PRECISE_EYES && user.zone_selected != BODY_ZONE_HEAD)
+		return ..()
+	var/mob/living/carbon/human/poorsod = M
+	visible_message("<span class='danger'>[user] throws the sand at [poorsod]'s face!</span>")
+	if(ishuman(user))
+		var/mob/living/carbon/human/sayer = user
+		sayer.forcesay("POCKET SAAND!!")
+	eyesand(poorsod)
+
+/obj/item/stack/ore/glass/proc/eyesand(mob/living/carbon/human/C)
 	if(C.head && C.head.flags_cover & HEADCOVERSEYES)
 		visible_message("<span class='danger'>[C]'s headgear blocks the sand!</span>")
 		return
@@ -118,7 +130,9 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	C.adjustStaminaLoss(15)//the pain from your eyes burning does stamina damage
 	C.confused += 5
 	to_chat(C, "<span class='userdanger'>\The [src] gets into your eyes! The pain, it burns!</span>")
+	C.forcesay("*scream")
 	qdel(src)
+
 
 /obj/item/stack/ore/glass/ex_act(severity, target)
 	if (severity == EXPLODE_NONE)
@@ -320,7 +334,7 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	throwforce = 2
 	w_class = WEIGHT_CLASS_TINY
 	custom_materials = list(/datum/material/iron = 400)
-	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS | MATERIAL_EFFECTS
 	var/string_attached
 	var/list/sideslist = list("heads","tails")
 	var/cooldown = 0
@@ -341,6 +355,9 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	for(var/i in custom_materials)
 		var/datum/material/M = i
 		value += M.value_per_unit * custom_materials[M]
+
+/obj/item/coin/get_item_credit_value()
+	return value
 
 /obj/item/coin/suicide_act(mob/living/user)
 	user.visible_message("<span class='suicide'>[user] contemplates suicide with \the [src]!</span>")
@@ -365,12 +382,11 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 
 /obj/item/coin/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/stack/cable_coil))
-		var/obj/item/stack/cable_coil/CC = W
 		if(string_attached)
 			to_chat(user, "<span class='warning'>There already is a string attached to this coin!</span>")
 			return
 
-		if (CC.use(1))
+		if (W.use_tool(src, user, 0, 1, max_level = JOB_SKILL_BASIC))
 			add_overlay("coin_string_overlay")
 			string_attached = 1
 			to_chat(user, "<span class='notice'>You attach a string to the coin.</span>")

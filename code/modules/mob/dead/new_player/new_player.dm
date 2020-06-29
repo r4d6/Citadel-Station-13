@@ -10,7 +10,6 @@
 
 	density = FALSE
 	stat = DEAD
-	canmove = FALSE
 
 	var/mob/living/new_character	//for instant transfer once the round is set up
 
@@ -177,9 +176,6 @@
 			SSticker.queue_delay = 4
 			qdel(src)
 
-	if(!ready && href_list["preference"])
-		if(client)
-			client.prefs.process_link(src, href_list)
 	else if(!href_list["late_join"])
 		new_player_panel()
 
@@ -393,6 +389,8 @@
 
 		character.update_parallax_teleport()
 
+	job.standard_assign_skills(character.mind)
+
 	SSticker.minds += character.mind
 
 	var/mob/living/carbon/human/humanc
@@ -581,7 +579,13 @@
 		qdel(src)
 
 /mob/dead/new_player/proc/ViewManifest()
-	var/dat = "<html><body>"
+	if(!client)
+		return
+	if(world.time < client.crew_manifest_delay)
+		return
+	client.crew_manifest_delay = world.time + (1 SECONDS)
+
+	var/dat = "<html><head><meta http-equiv='Content-Type' content='text/html; charset=UTF-8'></head><body>"
 	dat += "<h4>Crew Manifest</h4>"
 	dat += GLOB.data_core.get_manifest(OOC = 1)
 
