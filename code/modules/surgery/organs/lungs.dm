@@ -24,6 +24,8 @@
 	now_fixed = "<span class='warning'>Your lungs seem to once again be able to hold air.</span>"
 	high_threshold_cleared = "<span class='info'>The constriction around your chest loosens as your breathing calms down.</span>"
 
+	food_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/medicine/salbutamol = 5)
+
 	//Breath damage
 
 	var/safe_oxygen_min = 16 // Minimum safe partial pressure of O2, in kPa
@@ -446,22 +448,17 @@
 			if(prob(20))
 				to_chat(H, "<span class='warning'>You feel [hot_message] in your [name]!</span>")
 
-
-/obj/item/organ/lungs/on_life()
-	..()
-	if((!failed) && ((organ_flags & ORGAN_FAILING)))
-		if(owner.stat == CONSCIOUS)
+/obj/item/organ/lungs/applyOrganDamage(d, maximum = maxHealth)
+	. = ..()
+	if(!.)
+		return
+	if(!failed && organ_flags & ORGAN_FAILING)
+		if(owner && owner.stat == CONSCIOUS)
 			owner.visible_message("<span class='danger'>[owner] grabs [owner.p_their()] throat, struggling for breath!</span>", \
 								"<span class='userdanger'>You suddenly feel like you can't breathe!</span>")
 		failed = TRUE
 	else if(!(organ_flags & ORGAN_FAILING))
 		failed = FALSE
-	return
-
-/obj/item/organ/lungs/prepare_eat()
-	var/obj/S = ..()
-	S.reagents.add_reagent(/datum/reagent/medicine/salbutamol, 5)
-	return S
 
 /obj/item/organ/lungs/ipc
 	name = "ipc lungs"
@@ -547,5 +544,6 @@
 	color = "#68e83a"
 
 /obj/item/organ/lungs/yamerol/on_life()
-	..()
-	damage += 2 //Yamerol lungs are temporary
+	. = ..()
+	if(.)
+		applyOrganDamage(2) //Yamerol lungs are temporary

@@ -78,6 +78,7 @@
 	create_initial_profile()
 	if(give_objectives)
 		forge_objectives()
+	owner.current.grant_all_languages(FALSE, FALSE, TRUE)	//Grants omnitongue. We are able to transform our body after all.
 	remove_clownmut()
 	. = ..()
 
@@ -90,6 +91,7 @@
 			B.organ_flags |= ORGAN_VITAL
 			B.decoy_override = FALSE
 	remove_changeling_powers()
+	owner.special_role = null
 	. = ..()
 
 /datum/antagonist/changeling/proc/remove_clownmut()
@@ -395,20 +397,31 @@
 			escape_objective_possible = FALSE
 			break
 	var/changeling_objective = rand(1,3)
+	var/generic_absorb_objective = FALSE
+	var/multiple_lings = length(get_antag_minds(/datum/antagonist/changeling,TRUE)) > 1
 	switch(changeling_objective)
 		if(1)
-			var/datum/objective/absorb/absorb_objective = new
-			absorb_objective.owner = owner
-			absorb_objective.gen_amount_goal(6, 8)
-			objectives += absorb_objective
+			generic_absorb_objective = TRUE
 		if(2)
-			var/datum/objective/absorb_changeling/ac = new
-			ac.owner = owner
-			objectives += ac
+			if(multiple_lings)
+				var/datum/objective/absorb_changeling/ac = new
+				ac.owner = owner
+				objectives += ac
+			else
+				generic_absorb_objective = TRUE
 		if(3)
-			var/datum/objective/absorb_most/ac = new
-			ac.owner = owner
-			objectives += ac
+			if(multiple_lings)
+				var/datum/objective/absorb_most/ac = new
+				ac.owner = owner
+				objectives += ac
+			else
+				generic_absorb_objective = TRUE
+
+	if(generic_absorb_objective)
+		var/datum/objective/absorb/absorb_objective = new
+		absorb_objective.owner = owner
+		absorb_objective.gen_amount_goal(6, 8)
+		objectives += absorb_objective
 
 	if(prob(60))
 		if(prob(85))
@@ -563,7 +576,7 @@
 			if(objective.completable)
 				var/completion = objective.check_completion()
 				if(completion >= 1)
-					parts += "<B>Objective #[count]</B>: [objective.explanation_text] <span class='greentext'><B>Success!</span>"
+					parts += "<B>Objective #[count]</B>: [objective.explanation_text] <span class='greentext'><B>Success!</B></span>"
 				else if(completion <= 0)
 					parts += "<B>Objective #[count]</B>: [objective.explanation_text] <span class='redtext'>Fail.</span>"
 					changelingwin = FALSE

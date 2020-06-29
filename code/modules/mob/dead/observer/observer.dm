@@ -287,12 +287,12 @@ Works together with spawning an observer, noted above.
 				var/maximumRoundEnd = SSautotransfer.starttime + SSautotransfer.voteinterval * SSautotransfer.maxvotes
 				if(penalty - SSshuttle.realtimeofstart > maximumRoundEnd + SSshuttle.emergencyCallTime + SSshuttle.emergencyDockTime + SSshuttle.emergencyEscapeTime)
 					penalty = CANT_REENTER_ROUND
-			if(!(ckey in GLOB.client_ghost_timeouts))
-				GLOB.client_ghost_timeouts += ckey
-				GLOB.client_ghost_timeouts[ckey] = 0
-			else if(GLOB.client_ghost_timeouts[ckey] == CANT_REENTER_ROUND)
+			if(!(ghost.ckey in GLOB.client_ghost_timeouts))
+				GLOB.client_ghost_timeouts += ghost.ckey
+				GLOB.client_ghost_timeouts[ghost.ckey] = 0
+			else if(GLOB.client_ghost_timeouts[ghost.ckey] == CANT_REENTER_ROUND)
 				return
-			GLOB.client_ghost_timeouts[ckey] = max(GLOB.client_ghost_timeouts[ckey],penalty)
+			GLOB.client_ghost_timeouts[ghost.ckey] = max(GLOB.client_ghost_timeouts[ghost.ckey],penalty)
 	// needs to be done AFTER the ckey transfer, too
 	return ghost
 
@@ -707,7 +707,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 //this is a mob verb instead of atom for performance reasons
 //see /mob/verb/examinate() in mob.dm for more info
 //overridden here and in /mob/living for different point span classes and sanity checks
-/mob/dead/observer/pointed(atom/A as mob|obj|turf in view())
+/mob/dead/observer/pointed(atom/A as mob|obj|turf in fov_view())
 	if(!..())
 		return 0
 	usr.visible_message("<span class='deadsay'><b>[src]</b> points to [A].</span>")
@@ -716,6 +716,12 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 /mob/dead/observer/verb/view_manifest()
 	set name = "View Crew Manifest"
 	set category = "Ghost"
+
+	if(!client)
+		return
+	if(world.time < client.crew_manifest_delay)
+		return
+	client.crew_manifest_delay = world.time + (1 SECONDS)
 
 	var/dat
 	dat += "<h4>Crew Manifest</h4>"
@@ -937,3 +943,20 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 		spawners_menu = new(src)
 
 	spawners_menu.ui_interact(src)
+
+/mob/dead/observer/verb/game_info()
+	set name = "Game info"
+	set desc = "Shows various info relating to the game mode, antagonists etc."
+	set category = "Ghost"
+	if(!started_as_observer && can_reenter_corpse)
+		to_chat(src, "You cannot see this info unless you are an observer or you've chosen Do Not Resuscitate!")
+		return
+	var/list/stuff = list("[SSticker.mode.name]")
+	stuff += "Antagonists:\n"
+	for(var/datum/antagonist/A in GLOB.antagonists)
+		if(A.owner)
+			stuff += "[A.owner] the [A.name]"
+	var/ghost_info = SSticker.mode.ghost_info()
+	if(ghost_info)
+		stuff += ghost_info
+	to_chat(src,stuff.Join("\n"))

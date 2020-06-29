@@ -81,7 +81,7 @@
 		to_chat(user, "<span class='notice'>There's no weapon to remove from the mechanism.</span>")
 
 /obj/item/integrated_circuit/weaponized/weapon_firing/do_work()
-	if(!assembly || !installed_gun)
+	if(!assembly || !installed_gun || !installed_gun.can_shoot())
 		return
 	if(isliving(assembly.loc))
 		var/mob/living/L = assembly.loc
@@ -296,6 +296,7 @@
 	var/x_abs = clamp(T.x + target_x_rel, 0, world.maxx)
 	var/y_abs = clamp(T.y + target_y_rel, 0, world.maxy)
 	var/range = round(clamp(sqrt(target_x_rel*target_x_rel+target_y_rel*target_y_rel),0,8),1)
+	playsound(src, 'sound/weapons/sonic_jackhammer.ogg', 50, 1)
 	assembly.visible_message("<span class='danger'>\The [assembly] has thrown [A]!</span>")
 	log_attack("[assembly] [REF(assembly)] has thrown [A] with lethal force.")
 	A.forceMove(drop_location())

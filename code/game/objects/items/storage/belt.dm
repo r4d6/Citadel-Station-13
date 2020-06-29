@@ -43,6 +43,7 @@
 	icon_state = "utilitybelt"
 	item_state = "utility"
 	content_overlays = TRUE
+	custom_premium_price = 300
 	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE //because this is easier than trying to have showers wash all contents.
 
 /obj/item/storage/belt/utility/ComponentInitialize()
@@ -179,7 +180,8 @@
 		/obj/item/implantcase,
 		/obj/item/implant,
 		/obj/item/implanter,
-		/obj/item/pinpointer/crew
+		/obj/item/pinpointer/crew,
+		/obj/item/reagent_containers/chem_pack
 		))
 
 /obj/item/storage/belt/medical/surgery_belt_adv
@@ -511,16 +513,16 @@
 	new /obj/item/grenade/smokebomb(src)
 	new /obj/item/grenade/empgrenade(src)
 	new /obj/item/grenade/empgrenade(src)
-	new /obj/item/grenade/syndieminibomb/concussion/frag(src)
-	new /obj/item/grenade/syndieminibomb/concussion/frag(src)
-	new /obj/item/grenade/syndieminibomb/concussion/frag(src)
-	new /obj/item/grenade/syndieminibomb/concussion/frag(src)
-	new /obj/item/grenade/syndieminibomb/concussion/frag(src)
-	new /obj/item/grenade/syndieminibomb/concussion/frag(src)
-	new /obj/item/grenade/syndieminibomb/concussion/frag(src)
-	new /obj/item/grenade/syndieminibomb/concussion/frag(src)
-	new /obj/item/grenade/syndieminibomb/concussion/frag(src)
-	new /obj/item/grenade/syndieminibomb/concussion/frag(src)
+	new /obj/item/grenade/frag(src)
+	new /obj/item/grenade/frag(src)
+	new /obj/item/grenade/frag(src)
+	new /obj/item/grenade/frag(src)
+	new /obj/item/grenade/frag(src)
+	new /obj/item/grenade/frag(src)
+	new /obj/item/grenade/frag(src)
+	new /obj/item/grenade/frag(src)
+	new /obj/item/grenade/frag(src)
+	new /obj/item/grenade/frag(src)
 	new /obj/item/grenade/gluon(src)
 	new /obj/item/grenade/gluon(src)
 	new /obj/item/grenade/gluon(src)
@@ -695,7 +697,10 @@
 		/obj/item/gun/ballistic/revolver,
 		/obj/item/ammo_box,
 		/obj/item/toy/gun,
-		/obj/item/gun/energy/e_gun/mini
+		/obj/item/gun/energy/e_gun/mini,
+		/obj/item/gun/ballistic/automatic/magrifle/pistol,
+		/obj/item/gun/energy/disabler,
+		/obj/item/gun/energy/taser
 		))
 
 /obj/item/storage/belt/holster/full/PopulateContents()
@@ -709,6 +714,7 @@
 	icon_state = "fannypack_leather"
 	item_state = "fannypack_leather"
 	dying_key = DYE_REGISTRY_FANNYPACK
+	custom_price = PRICE_ALMOST_CHEAP
 
 /obj/item/storage/belt/fannypack/ComponentInitialize()
 	. = ..()
