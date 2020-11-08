@@ -11,6 +11,10 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	name = "item"
 	icon = 'icons/obj/items_and_weapons.dmi'
 	blocks_emissive = EMISSIVE_BLOCK_GENERIC
+	
+	attack_hand_speed = 0
+	attack_hand_is_action = FALSE
+	attack_hand_unwieldlyness = 0
 
 	///icon state name for inhand overlays
 	var/item_state = null
@@ -58,16 +62,8 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	/// How long, in deciseconds, this staggers for, if null it will autocalculate from w_class and force. Unlike total mass this supports 0 and negatives.
 	var/stagger_force
 
-	/**
-	  * Set FALSE and then checked at the end of on mob/living/attackby(), set TRUE on living/pre_attacked_by().
-	  * Should it be FALSE by the end of the item/attack(), that means the item overrode the standard attack behaviour
-	  * and the user still needs the delay applied. We can't be using return values since that'll stop afterattack() from being triggered.
-	  */
-	var/attack_delay_done = FALSE
-	///next_move click/attack delay of this item.
-	var/click_delay = CLICK_CD_MELEE
-
 	var/slot_flags = 0		//This is used to determine on which slots an item can fit.
+	var/current_equipped_slot
 	pass_flags = PASSTABLE
 	pressure_resistance = 4
 	var/obj/item/master = null
@@ -107,12 +103,12 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 
 	mouse_drag_pointer = MOUSE_ACTIVE_POINTER //the icon to indicate this object is being dragged
 
-	var/list/embedding = NONE
+	var/list/embedding
 
 	var/flags_cover = 0 //for flags such as GLASSESCOVERSEYES
 	var/heat = 0
-	///All items with sharpness of IS_SHARP or higher will automatically get the butchering component.
-	var/sharpness = IS_BLUNT
+	///All items with sharpness of SHARP_EDGED or higher will automatically get the butchering component.
+	var/sharpness = SHARP_NONE
 
 	var/tool_behaviour = NONE
 	var/toolspeed = 1
@@ -179,6 +175,11 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 		if(damtype == "brute")
 			hitsound = "swing_hit"
 
+	if(used_skills)
+		for(var/path in used_skills)
+			var/datum/skill/S = GLOB.skill_datums[path]
+			LAZYADD(used_skills[path], S.skill_traits)
+
 /obj/item/Destroy()
 	item_flags &= ~DROPDEL	//prevent reqdels
 	if(ismob(loc))
@@ -205,7 +206,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	if(GLOB.rpg_loot_items)
 		AddComponent(/datum/component/fantasy)
 
-	if(sharpness) //give sharp objects butchering functionality, for consistency
+	if(sharpness && force > 5) //give sharp objects butchering functionality, for consistency
 		AddComponent(/datum/component/butchering, 80 * toolspeed)
 
 /obj/item/proc/check_allowed_items(atom/target, not_inside, target_self)
@@ -307,14 +308,15 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	add_fingerprint(usr)
 	return ..()
 
-/obj/item/attack_hand(mob/user)
-	. = ..()
-	if(.)
-		return
+/obj/item/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
 	if(!user)
 		return
 	if(anchored)
 		return
+	if(loc == user && current_equipped_slot && current_equipped_slot != SLOT_HANDS)
+		if(current_equipped_slot in user.check_obscured_slots())
+			to_chat(user, "<span class='warning'>You are unable to unequip that while wearing other garments over it!</span>")
+			return FALSE
 
 	if(resistance_flags & ON_FIRE)
 		var/mob/living/carbon/C = user
@@ -336,7 +338,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 				C.update_damage_overlays()
 			return
 
-	if(acid_level > 20 && !ismob(loc))// so we can still remove the clothes on us that have acid.
+	if(acid_level > 20 && ismob(loc))// so we can still remove the clothes on us that have acid.
 		var/mob/living/carbon/C = user
 		if(istype(C))
 			if(!C.gloves || (!(C.gloves.resistance_flags & (UNACIDABLE|ACID_PROOF))))
@@ -379,6 +381,11 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 		return
 	if(anchored)
 		return
+	if(loc == user && current_equipped_slot && current_equipped_slot != SLOT_HANDS)
+		if(current_equipped_slot in user.check_obscured_slots())
+			to_chat(user, "<span class='warning'>You are unable to unequip that while wearing other garments over it!</span>")
+			return FALSE
+
 
 	SEND_SIGNAL(loc, COMSIG_TRY_STORAGE_TAKE, src, user.loc, TRUE)
 
@@ -423,6 +430,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 
 /obj/item/proc/dropped(mob/user)
 	SHOULD_CALL_PARENT(TRUE)
+	current_equipped_slot = null
 	for(var/X in actions)
 		var/datum/action/A = X
 		A.Remove(user)
@@ -457,6 +465,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 			usr.UnarmedAttack(src, TRUE)
 			if(usr.get_active_held_item() == src)
 				melee_attack_chain(usr, over)
+			usr.FlushCurrentAction()
 			return TRUE //returning TRUE as a "is this overridden?" flag
 	if(!Adjacent(usr) || !over.Adjacent(usr))
 		return // should stop you from dragging through windows
@@ -470,7 +479,9 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 // for items that can be placed in multiple slots
 // note this isn't called during the initial dressing of a player
 /obj/item/proc/equipped(mob/user, slot)
+	SHOULD_CALL_PARENT(TRUE)
 	. = SEND_SIGNAL(src, COMSIG_ITEM_EQUIPPED, user, slot)
+	current_equipped_slot = slot
 	if(!(. & COMPONENT_NO_GRANT_ACTIONS))
 		for(var/X in actions)
 			var/datum/action/A = X
@@ -496,11 +507,11 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 //if this is being done by a mob other than M, it will include the mob equipper, who is trying to equip the item to mob M. equipper will be null otherwise.
 //If you are making custom procs but would like to retain partial or complete functionality of this one, include a 'return ..()' to where you want this to happen.
 //Set disable_warning to TRUE if you wish it to not give you outputs.
-/obj/item/proc/mob_can_equip(mob/living/M, mob/living/equipper, slot, disable_warning = FALSE, bypass_equip_delay_self = FALSE)
+/obj/item/proc/mob_can_equip(mob/living/M, mob/living/equipper, slot, disable_warning = FALSE, bypass_equip_delay_self = FALSE, clothing_check = FALSE, list/return_warning)
 	if(!M)
 		return FALSE
 
-	return M.can_equip(src, slot, disable_warning, bypass_equip_delay_self)
+	return M.can_equip(src, slot, disable_warning, bypass_equip_delay_self, clothing_check, return_warning)
 
 /obj/item/verb/verb_pickup()
 	set src in oview(1)
@@ -554,7 +565,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 		to_chat(user, "<span class='danger'>You cannot locate any organic eyes on this brain!</span>")
 		return
 
-	if(IS_STAMCRIT(user))//CIT CHANGE - makes eyestabbing impossible if you're in stamina softcrit
+	if(IS_STAMCRIT(user) || !user.UseStaminaBuffer(STAMINA_COST_ITEM_EYESTAB, warn = TRUE))//CIT CHANGE - makes eyestabbing impossible if you're in stamina softcrit
 		to_chat(user, "<span class='danger'>You're too exhausted for that.</span>")//CIT CHANGE - ditto
 		return //CIT CHANGE - ditto
 
@@ -563,8 +574,6 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	playsound(loc, src.hitsound, 30, 1, -1)
 
 	user.do_attack_animation(M)
-
-	user.adjustStaminaLossBuffered(10)//CIT CHANGE - makes eyestabbing cost stamina
 
 	if(M != user)
 		M.visible_message("<span class='danger'>[user] has stabbed [M] in the eye with [src]!</span>", \
@@ -835,7 +844,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 
 // Called when a mob tries to use the item as a tool.
 // Handles most checks.
-/obj/item/proc/use_tool(atom/target, mob/living/user, delay, amount=0, volume=0, datum/callback/extra_checks, skill_gain_mult = 1, max_level = INFINITY)
+/obj/item/proc/use_tool(atom/target, mob/living/user, delay, amount=0, volume=0, datum/callback/extra_checks, skill_gain_mult = STD_USE_TOOL_MULT)
 	// No delay means there is no start message, and no reason to call tool_start_check before use_tool.
 	// Run the start check here so we wouldn't have to call it manually.
 	if(!delay && !tool_start_check(user, amount))
@@ -880,7 +889,8 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 		for(var/skill in used_skills)
 			if(!(SKILL_TRAINING_TOOL in used_skills[skill]))
 				continue
-			user.mind.auto_gain_experience(skill, gain*skill_gain_mult, GET_STANDARD_LVL(max_level))
+			var/datum/skill/S = GLOB.skill_datums[skill]
+			user.mind.auto_gain_experience(skill, gain*skill_gain_mult*S.item_skill_gain_multi)
 
 	return TRUE
 
@@ -1078,7 +1088,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 
 
 /obj/item/proc/updateEmbedding()
-	if(!islist(embedding) || !LAZYLEN(embedding))
+	if(!LAZYLEN(embedding))
 		return
 
 	AddElement(/datum/element/embed,\

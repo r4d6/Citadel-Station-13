@@ -228,9 +228,9 @@
 
 					for(var/BP in PP.bodyparts)
 						var/obj/item/bodypart/NN = BP
-						if(NN.status == BODYPART_ORGANIC && NN.species_id != "plasmaman") //getting every organic, non-plasmaman limb (augments/androids are immune to this)
+						if(NN.is_organic_limb() && NN.species_id != "plasmaman") //getting every organic, non-plasmaman limb (augments/androids are immune to this)
 							plasma_parts += NN
-						if(NN.status == BODYPART_ROBOTIC)
+						if(NN.is_robotic_limb(FALSE))
 							robo_parts += NN
 
 					if(prob(35)) //checking if the delay is over & if the victim actually has any parts to nom
@@ -502,7 +502,7 @@
 
 /obj/effect/spawner/lootdrop/snowdin/dungeonheavy
 	name = "dungeon heavy"
-	loot = list(/obj/item/twohanded/fireaxe = 25,
+	loot = list(/obj/item/fireaxe = 25,
 				/obj/item/organ/brain/alien = 17,
 				/obj/item/organ/heart/cursed = 7,
 				/obj/item/book/granter/spell/forcewall = 17,
@@ -518,7 +518,7 @@
 	loot = list(/obj/item/stack/sheet/mineral/snow{amount = 25} = 10,
 				/obj/item/toy/snowball = 15,
 				/obj/item/shovel = 10,
-				/obj/item/twohanded/spear = 8,
+				/obj/item/spear = 8,
 				)
 
 //special items//--
